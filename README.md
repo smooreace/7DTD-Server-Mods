@@ -36,5 +36,7 @@ Navigate to the location where you have 7 Days to Die installed
   4 - Click on the Explorer window thats showing the contents of the Mod folder
 
   5 - Hit CTRL V (PASTE)
-
+ 
+ ******************************************************************************************************************
+ 
  Once its finished copying you're all set. Close both windows, start the game, and you're ready to join!
