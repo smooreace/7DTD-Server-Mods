@@ -4,6 +4,7 @@ This collection includes all mods running on The Tropolis Collective 7 Days to D
  
 All of these are not absolutely required on your client. But its easier to just grab them all than it is to to be selective.
  
+ ******************************************************************************************************************
  
 Near the top right corner, click the greed button that says CODE
 Then select - Download ZIP
