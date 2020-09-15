@@ -1,0 +1,32 @@
+<configs>
+
+	<append xpath="/progression/perks">
+
+<perk name="CraftSpeed" parent="Lam's Bonus" name_key="Crafting Speed" desc_key="Tired of some of the LONG crafting timers ?\nLook no further just specialize your self into this perk.\nTo speed things along." icon="ui_game_symbol_craftinggain">
+
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="2" desc_key="Perception lvl 2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="Perception lvl 4"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="6" desc_key="Perception lvl 6"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="8" desc_key="Perception lvl 8"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="10" desc_key="Perception lvl 10"/></level_requirements>
+
+	<effect_group>
+
+		<passive_effect name="CraftingTime" operation="perc_subtract" level="1" value=".1"/>
+		<passive_effect name="CraftingTime" operation="perc_subtract" level="2" value=".2"/>
+		<passive_effect name="CraftingTime" operation="perc_subtract" level="3" value=".3"/>
+		<passive_effect name="CraftingTime" operation="perc_subtract" level="4" value=".4"/>
+		<passive_effect name="CraftingTime" operation="perc_subtract" level="5" value=".5"/>
+			
+		<effect_description level="1" desc_base="Crafting is 10% faster." long_desc_key="Increases your crafting speed by 10%."/>
+		<effect_description level="2" desc_base="Crafting is 20% faster." long_desc_key="Increases your crafting speed by 20%."/>
+		<effect_description level="3" desc_base="Crafting is 30% faster." long_desc_key="Increases your crafting speed by 30%."/>
+		<effect_description level="4" desc_base="Crafting is 40% faster." long_desc_key="Increases your crafting speed by 40%."/>
+		<effect_description level="5" desc_base="Crafting is 50% faster." long_desc_key="Increases your crafting speed by 50%."/>
+
+	</effect_group>
+</perk>
+
+</append>
+	
+</configs>

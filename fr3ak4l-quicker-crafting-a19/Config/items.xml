@@ -1,0 +1,7 @@
+<fr3ak4lQuickerCraftingMod>
+	<!-- Quicker Crafting fixes-->
+	<set xpath="/items/item[@name='apparelNerdGlasses']/effect_group/passive_effect[@name='CraftingTime']/@value">-.07</set>
+	<set xpath="/items/item[@name='apparelNerdGlasses']/effect_group/display_value[@name='dCraftingTime']/@value">-.10</set>
+	<set xpath="/items/item[@name='toolAnvil']/effect_group/passive_effect[@name='CraftingTime']/@value">-.047</set>
+	<set xpath="/items/item[@name='toolAnvil']/effect_group/display_value[@name='dCraftingTime']/@value">-.20</set>
+</fr3ak4lQuickerCraftingMod>

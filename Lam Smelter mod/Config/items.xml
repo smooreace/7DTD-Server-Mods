@@ -1,0 +1,123 @@
+<configs>
+
+<remove xpath="/items/item[@name='toolBellows']" />
+
+	<append xpath="/items">
+
+<item name="toolBellows">
+	<property name="UnlockedBy" value="toolBellowsSchematic"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MtoolBellows"/>
+	<property name="Stacknumber" value="1"/> <!-- STK resource -->
+	<property name="Weight" value="100"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="DisplayType" value="toolBellows"/>
+	<property name="ItemTypeIcon" value="forge"/>
+	<effect_group tiered="false">
+		<passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.3"/> <!-- this is essentially a multiplier -->
+		<display_value name="dCraftingSmeltTime" value=".3"/>
+	</effect_group>
+</item>
+
+<item name="toolBellowsx40">
+	<property name="UnlockedBy" value="Smelter"/>
+	<property name="CustomIcon" value="toolBellows"/> <property name="CustomIconTint" value="255,155,0"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MtoolBellows"/>
+	<property name="Stacknumber" value="1"/> <!-- STK resource -->
+	<property name="Weight" value="100"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="DisplayType" value="toolBellows"/>
+	<property name="ItemTypeIcon" value="forge"/>
+	<effect_group tiered="false">
+		<passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.1"/> <!-- this is essentially a multiplier -->
+		<display_value name="dCraftingSmeltTime" value=".1"/>
+	</effect_group>
+</item>
+
+<item name="toolBellowsx50">
+	<property name="UnlockedBy" value="Smelter"/>
+	<property name="CustomIcon" value="toolBellows"/> <property name="CustomIconTint" value="255,255,0"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MtoolBellows"/>
+	<property name="Stacknumber" value="1"/> <!-- STK resource -->
+	<property name="Weight" value="100"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="DisplayType" value="toolBellows"/>
+	<property name="ItemTypeIcon" value="forge"/>
+	<effect_group tiered="false">
+		<passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.1"/> <!-- this is essentially a multiplier -->
+		<display_value name="dCraftingSmeltTime" value=".1"/>
+	</effect_group>
+</item>
+
+<item name="toolBellowsx60">
+	<property name="UnlockedBy" value="Smelter"/>
+	<property name="CustomIcon" value="toolBellows"/> <property name="CustomIconTint" value="0,255,0"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MtoolBellows"/>
+	<property name="Stacknumber" value="1"/> <!-- STK resource -->
+	<property name="Weight" value="100"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="DisplayType" value="toolBellows"/>
+	<property name="ItemTypeIcon" value="forge"/>
+	<effect_group tiered="false">
+		<passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.1"/> <!-- this is essentially a multiplier -->
+		<display_value name="dCraftingSmeltTime" value=".1"/>
+	</effect_group>
+</item>
+
+<item name="toolBellowsx70">
+	<property name="UnlockedBy" value="Smelter"/>
+	<property name="CustomIcon" value="toolBellows"/> <property name="CustomIconTint" value="0,0,255"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MtoolBellows"/>
+	<property name="Stacknumber" value="1"/> <!-- STK resource -->
+	<property name="Weight" value="100"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="DisplayType" value="toolBellows"/>
+	<property name="ItemTypeIcon" value="forge"/>
+	<effect_group tiered="false">
+		<passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.1"/> <!-- this is essentially a multiplier -->
+		<display_value name="dCraftingSmeltTime" value=".1"/>
+	</effect_group>
+</item>
+
+<item name="toolBellowsx80">
+	<property name="UnlockedBy" value="Smelter"/>
+	<property name="CustomIcon" value="toolBellows"/> <property name="CustomIconTint" value="255,0,255"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MtoolBellows"/>
+	<property name="Stacknumber" value="1"/> <!-- STK resource -->
+	<property name="Weight" value="100"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="DisplayType" value="toolBellows"/>
+	<property name="ItemTypeIcon" value="forge"/>
+	<effect_group tiered="false">
+		<passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.1"/> <!-- this is essentially a multiplier -->
+		<display_value name="dCraftingSmeltTime" value=".1"/>
+	</effect_group>
+</item>
+
+	</append>
+
+    
+</configs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Lam's solar generator mod" />
+		<Description value="increases the power output of the solarbank from 180 to 300 to be in line with the batterybank wich is alrdy 300.
+							increases the fuel storage of the generator from 1k to 10k." />
+		<Author value="Lam" />
+		<Version value="19" />
+	</ModInfo>
+</xml>

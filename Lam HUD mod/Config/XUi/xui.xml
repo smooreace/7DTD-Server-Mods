@@ -1,0 +1,10 @@
+<configs>
+	<set xpath="/xui/ruleset/window_group[@name='toolbelt']/window[@name='windowToolbelt']/@name">LamwindowToolbelt</set>
+	<set xpath="/xui/ruleset/window_group[@name='compass']/window[@name='windowCompass']/@name">LamwindowCompass</set>
+	<set xpath="/xui/ruleset/window_group[@name='toolbelt']/window[@name='HUDLeftStatBars']/@name">LamHUDLeftStatBars</set>
+
+<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']" >
+		<window name="LamWindowTimeDayHeight" />
+</append>
+
+</configs>

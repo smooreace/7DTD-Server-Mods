@@ -1,0 +1,12 @@
+
+<configs>
+
+<append xpath="/blocks/block[@name='terrStone']">
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="golddiggerharvest"/>
+	<drop event="Harvest" name="resourceRawDiamond" prob=".01" count="1" tag="diamondHarvest"/>
+	<drop event="Harvest" name="resourceSilverNugget" prob=".01" count="1" tag="silverHarvest"/>
+	<drop event="Harvest" name="resourceGoldNugget" prob=".01" count="1" tag="goldHarvest"/>
+
+</append>
+
+</configs>

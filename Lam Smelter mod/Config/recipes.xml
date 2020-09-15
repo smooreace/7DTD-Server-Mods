@@ -1,0 +1,27 @@
+<configs>
+ 
+<append xpath="/recipes">
+
+<recipe name="toolBellowsx40" count="1" craft_time="10" tags="learnable">
+	<ingredient name="toolBellows" count="1"/>
+</recipe>
+
+<recipe name="toolBellowsx50" count="1" craft_time="10" tags="learnable">
+	<ingredient name="toolBellows" count="1"/>
+</recipe>
+
+<recipe name="toolBellowsx60" count="1" craft_time="10" tags="learnable">
+	<ingredient name="toolBellows" count="1"/>
+</recipe>
+
+<recipe name="toolBellowsx70" count="1" craft_time="10" tags="learnable">
+	<ingredient name="toolBellows" count="1"/>
+</recipe>
+
+<recipe name="toolBellowsx80" count="1" craft_time="10" tags="learnable">
+	<ingredient name="toolBellows" count="1"/>
+</recipe>
+
+</append>
+
+</configs>

@@ -1,0 +1,40 @@
+<config>	
+	<append xpath="/progression/perks">
+	
+<perk name="GoldDigger" parent="Lam's Bonus" name_key="Gold Digger" desc_key="Specialize in mining to occasionally find rare ore." icon="ui_game_symbol_golddigger">
+
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="2" desc_key="Strength lvl 2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="Strength lvl 4"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="Strength lvl 6"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="8" desc_key="Strength lvl 8"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="10" desc_key="Strength lvl 10"/></level_requirements>
+
+	<effect_group>
+		<passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="golddiggerharvest"/>
+		
+		<passive_effect name="HarvestCount" operation="base_set" level="2" value="2" tags="golddiggerharvest"/>
+		
+		<passive_effect name="HarvestCount" operation="base_set" level="3" value="3" tags="golddiggerharvest"/>
+		<passive_effect name="HarvestCount" operation="base_set" level="3" value="1" tags="silverHarvest"/>
+		
+		<passive_effect name="HarvestCount" operation="base_set" level="4" value="4" tags="golddiggerharvest"/>
+		<passive_effect name="HarvestCount" operation="base_set" level="4" value="2" tags="silverHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_set" level="4" value="1" tags="goldHarvest"/>
+	
+		<passive_effect name="HarvestCount" operation="base_set" level="5" value="5" tags="golddiggerharvest"/>
+		<passive_effect name="HarvestCount" operation="base_set" level="5" value="3" tags="silverHarvest"/>	
+		<passive_effect name="HarvestCount" operation="base_set" level="5" value="2" tags="goldHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_set" level="5" value="1" tags="diamondHarvest"/>	
+
+		<effect_description level="1" desc_base="Barney Rubble" long_desc_key="gives you 5 scrap iron when mining stone."/>
+		<effect_description level="2" desc_base="Fred Flintstone" long_desc_key="gives you 10 scrap iron when mining stone."/>
+		<effect_description level="3" desc_base="James W. Marshall" long_desc_key="gives you 15 scrap iron when mining stone\nand a 1% chance of silver."/>
+		<effect_description level="4" desc_base="Stinky Pete" long_desc_key="gives you 20 scrap iron when mining stone\n2% chance of silver\nand 1% chance of gold."/>
+		<effect_description level="5" desc_base="Yosemite Sam" long_desc_key="gives you 25 scrap iron when mining stone\n3% chance of silver\n2% change of gold\nand 1% change of diamond."/>
+	</effect_group>
+	
+</perk>
+	
+</append>
+	
+</config>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="60Slot_Bag_30Reserve" />
+		<Description value="60 Slot Bag, with 30 Slots not available initially." />
+		<Author value="ShoudenKalferas, Based on Khaine's 60BBM"/>
+		<Version value="A19_1.0" />
+		<Website value="https://github.com/XelaNull/7dtd-Modlets.git" />
+	</ModInfo>
+</xml>

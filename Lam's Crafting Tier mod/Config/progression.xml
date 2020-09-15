@@ -1,0 +1,50 @@
+<config>	
+
+	<set xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">0,0,0,0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkHeavyArmor']/effect_group/passive_effect[@name='CraftingTier'][@value='1,4']/@value">0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='CraftingTier'][@value='1,4']/@value">0,0</set>
+	<set xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@name='CraftingTier'][@value='0,5']/@value">0,0</set>
+
+<append xpath="/progression/perks">
+
+<perk name="CraftingTier" parent="Lam's Bonus" name_key="Crafting Tier Master" desc_key="After studying your equipment for countless of hours\nyou have found a way to upgrade your \ngear, items and weapons." icon="ui_game_symbol_craftingtier">
+
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="Intellect lvl 2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="Intellect lvl 4"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="Intellect lvl 6"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="Intellect lvl 8"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="Intellect lvl 10"/></level_requirements>
+
+	<effect_group>
+		<passive_effect name="CraftingTier" operation="base_add" level="1" value="1" tier="1,6"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="2" value="2" tier="1,6"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="3" value="3" tier="1,6"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="4" value="4" tier="1,6"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="5" value="5" tier="1,6"/>
+
+		<effect_description level="1" desc_base="Crafting Tier 2" long_desc_key="You can now craft Tier 2 items, gear and weapons."/>
+		<effect_description level="2" desc_base="Crafting Tier 3" long_desc_key="You can now craft Tier 3 items, gear and weapons."/>
+		<effect_description level="3" desc_base="Crafting Tier 4" long_desc_key="You can now craft Tier 4 items, gear and weapons."/>
+		<effect_description level="4" desc_base="Crafting Tier 5" long_desc_key="You can now craft Tier 5 items, gear and weapons."/>
+		<effect_description level="5" desc_base="Crafting Tier 6" long_desc_key="You can now craft Tier 6 items, gear and weapons."/>
+	</effect_group>
+
+</perk>
+
+</append>
+	
+</config>

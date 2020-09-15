@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+			<!-- changing the max fuel capacity from 1k to 10k on the generator bank. -->
+	<set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxFuel']/@value">10000</set> 
+			<!-- changing the power output for solar cells from 30 to 50. -->
+	<set xpath="/blocks/block[@name='solarbank']/property[@name='OutputPerStack']/@value">50</set> 
+			<!-- changing the max power output for the solar bank from 180 to 300. -->
+	<set xpath="/blocks/block[@name='solarbank']/property[@name='MaxPower']/@value">300</set>	   
+
+</configs>

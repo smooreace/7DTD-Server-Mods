@@ -1,0 +1,7 @@
+<configs>
+
+   <!-- adjust the rows and cols for the vehicle storage -->
+    <set xpath="/windows/window[@name='windowVehicleStorage']/grid[@name='inventory']/@rows">11</set>
+    <set xpath="/windows/window[@name='windowVehicleStorage']/grid[@name='inventory']/@cols">11</set>
+	
+</configs>

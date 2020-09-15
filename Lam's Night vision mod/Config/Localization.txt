@@ -1,0 +1,3 @@
+Key,UsedInMainMenu,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+modNightvision,,items,Item,New,Nightvision module,,,,,
+modNightvisionDesc,,items,Item,New,This module can be installed into your head gear.,,,,,

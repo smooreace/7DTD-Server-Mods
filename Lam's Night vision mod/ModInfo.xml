@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Lam's Night vision mod" />
+        <Description value="Adds a night vision mod to the game wich you can install into helmets." />
+        <Author value="Lam" />
+        <Version value="19" />
+    </ModInfo>
+</xml>

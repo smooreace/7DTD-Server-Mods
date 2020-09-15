@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Lam's Gold digger" />
+		<Description value="adding a perk that will give you a bit of iron and also a % chance to find silver gold or diamonds nuggets when digging stone."/>
+		<Author value="lam" />
+		<Version value="19" />
+	</ModInfo>
+</xml>

@@ -1,0 +1,10 @@
+<configs>
+	<!-- Force input slots -->
+	<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowToolsForge']/@name">LamwindowToolsForge</set>
+	<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowFuel']/@name">LamwindowFuel</set>
+	<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">windowThreeForgeInput</set>
+	<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowOutput']/@name">windowThreeForgeOutput</set>
+	<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowCraftingQueue']/@name">LamwindowCraftingQueue</set>
+	<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowCraftingList']/@name">LamwindowCraftingList</set>
+
+</configs>

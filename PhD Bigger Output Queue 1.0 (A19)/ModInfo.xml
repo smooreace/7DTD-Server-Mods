@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="PhD Bigger Output Queue" />
+		<Description value="Increases the size of the output queue to 12" />
+		<Author value="PhDGaming" />
+		<Version value="1.0" />
+		<Website value="https://www.patreon.com/PhDGaming" />
+	</ModInfo>
+</xml>

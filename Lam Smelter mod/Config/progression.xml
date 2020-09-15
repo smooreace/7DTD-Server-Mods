@@ -1,0 +1,30 @@
+<config>	
+<append xpath="/progression/perks">
+	
+	<perk name="Smelter" parent="Lam's Bonus" name_key="Expert smelter" desc_key="Specialize your self in the art of smelting.\nOnce all 6 bellows are installed your smelting speed will be increased by 80%." icon="ui_game_symbol_smelter">
+
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="2" desc_key="Strength Lvl 2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="Strength Lvl 4"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="Strength Lvl 6"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="8" desc_key="Strength Lvl 8"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="10" desc_key="Strength Lvl 10"/></level_requirements>
+								  
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="toolBellowsx40"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1" tags="toolBellowsx50"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="toolBellowsx60"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="toolBellowsx70"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="toolBellowsx80"/>	
+		
+		<effect_description level="1" desc_base="Abraham Darby" long_desc_key="Unlocks a new bellows which increases smelting speed by 10%."/>
+		<effect_description level="2" desc_base="Benjamin Huntsman" long_desc_key="Unlocks a new bellows which increases smelting speed by 10%."/>
+		<effect_description level="3" desc_base="Henry Bessemer" long_desc_key="Unlocks a new bellows which increases smelting speed by 10%."/>
+		<effect_description level="4" desc_base="William Siemens" long_desc_key="Unlocks a new bellows which increases smelting speed by 10%."/>
+		<effect_description level="5" desc_base="Robert Durrer" long_desc_key="Unlocks a new bellows which increases smelting speed by 10%."/>
+
+</effect_group>
+
+</perk>
+
+</append>
+</config>

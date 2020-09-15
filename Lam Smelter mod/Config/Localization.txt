@@ -1,0 +1,14 @@
+Key,UsedInMainMenu,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+
+toolBellowsx40,items,Item,,,Advanced Bellows,,
+toolBellowsx40Desc,items,Item,,,A tool that can be installed in a forge. Adds another 10% air flow and so the smelting speed of the forge.,,
+toolBellowsx50,items,Item,,,Advanced Bellows,,
+toolBellowsx50Desc,items,Item,,,A tool that can be installed in a forge. Adds another 10% air flow and so the smelting speed of the forge.,,
+toolBellowsx60,items,Item,,,Advanced Bellows,,
+toolBellowsx60Desc,items,Item,,,A tool that can be installed in a forge. Adds another 10% air flow and so the smelting speed of the forge.,,
+toolBellowsx70,items,Item,,,Advanced Bellows,,
+toolBellowsx70Desc,items,Item,,,A tool that can be installed in a forge. Adds another 10% air flow and so the smelting speed of the forge.,,
+toolBellowsx80,items,Item,,,Advanced Bellows,,
+toolBellowsx80Desc,items,Item,,,A tool that can be installed in a forge. Adds another 10% air flow and so the smelting speed of the forge.,,
+
+toolBellows,items,Item,,,Original Bellows,,

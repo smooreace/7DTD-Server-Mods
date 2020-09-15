@@ -1,0 +1,5 @@
+<configs>
+<!-- Change Pack Mule Perk to unlock all slots -->
+<!-- Purposely leave 10 slots outside the realm of the perk to leave encumbrance even at maximum perk -->
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='3,6,10,14,18']/@value">4,8,12,16,20</set>
+</configs>

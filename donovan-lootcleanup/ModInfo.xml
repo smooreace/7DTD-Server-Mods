@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="Donovan_LootCleanup" />
+    <Description value="Destroys certain containers after looting them, cleaning up the environment" />
+    <Author value="Donovan" />
+    <Version value="19.0.2.0" compat="A19,A18,A17" />
+  </ModInfo>
+</xml>

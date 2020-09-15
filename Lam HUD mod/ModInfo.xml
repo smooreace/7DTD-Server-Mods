@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Lam HUD mod" />
+        <Description value="Moves the food, water,time and day to the bottom left
+							also adds a height bar and a kill counter to the bottom left." />
+        <Author value="Lam" />
+        <Version value="19" />
+    </ModInfo>
+</xml>

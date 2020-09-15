@@ -1,0 +1,21 @@
+<fr3ak4lQuickerCraftingMod>
+	<append xpath="/progression/attributes/attribute[@name='attIntellect']">
+		<effect_group>
+			<passive_effect name="CraftingTime" operation="perc_add" value="-.50" level="1,10"/>
+	   </effect_group>
+	</append>
+	
+	<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTime']/@value">-0.2</set>
+	<!-- <passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-0.1,-.5" tags="salvageScrap"/> -->
+	
+	<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='CraftingTime']/@value">-0.2</set>
+	<!-- <passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-.1,-.5" tags="perkMasterChef"/> -->
+	
+	<set xpath="/progression/perks/perk[@name='perkPhysician']/effect_group/passive_effect[@name='CraftingTime']/@value">-0.2</set>
+	<!-- <passive_effect name="CraftingTime" operation="perc_add" level="2,3,4" value="-.2,-.2,-.4" tags="chemStationCrafting"/> -->
+	
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime' and @tags='perkAdvancedEngineering']/@value">-0.2</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime' and @tags='workbenchCrafting,cementMixerCrafting']/@value">-0.2</set>
+	<!-- <passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-0.2" tags="perkAdvancedEngineering"/> -->
+	<!-- <passive_effect name="CraftingTime" operation="perc_add" level="2,5" value="-0.2" tags="workbenchCrafting,cementMixerCrafting"/> -->
+</fr3ak4lQuickerCraftingMod>

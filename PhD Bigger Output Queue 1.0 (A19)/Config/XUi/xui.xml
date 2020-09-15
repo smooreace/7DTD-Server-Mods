@@ -1,0 +1,12 @@
+<configs>
+	<!-- Campfire crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_campfire']/window[@name='windowOutput']/@name">PhDWindowOutputQueue</set>
+	<!-- Forge crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowOutput']/@name">PhDWindowOutputQueue</set>
+	<!-- Cement mixer crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_cementMixer']/window[@name='windowOutput']/@name">PhDWindowOutputQueue</set>
+	<!-- Workbench crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_workbench']/window[@name='windowOutput']/@name">PhDWindowOutputQueue</set>
+	<!-- Chemistry station crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_chemistryStation']/window[@name='windowOutput']/@name">PhDWindowOutputQueue</set>
+</configs>

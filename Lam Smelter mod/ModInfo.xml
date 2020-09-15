@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Lam smelter mod" />
+		<Description value="Decreases the melting time of resources in the forge.
+							When using the bellows in said forge.
+							Added KhaineGB 3slot forge into the mix."/>
+		<Author value="lam and KhaineGB" />
+		<Version value="19.0" />
+	</ModInfo>
+</xml>
