@@ -1,0 +1,55 @@
+
+<configs>
+
+<append xpath="/blocks/block[@name='terrStone']">
+	<drop event="Harvest" name="resourceScrapIron" count="0,5" tag="senseMineral"/>
+	<drop event="Harvest" name="resourceCoal" count="0,1" tag="senseMineral"/>
+	<drop event="Harvest" name="resourceScrapLead" count="0,1" tag="senseMineral"/>
+	<drop event="Harvest" name="resourceScrapBrass" prob=".3 " count="0,1" tag="senseMineral"/>
+	<drop event="Harvest" name="resourceOilShale" count="0,1" tag="senseMineral"/>
+	<drop event="Harvest" name="resourceSilverNugget" prob=".01" count="0,1" tag="senseMineral"/>
+	<drop event="Harvest" name="resourceGoldNugget" prob=".005" count="0,1" tag="senseMineral"/>
+	<drop event="Harvest" name="resourceRawDiamond" prob= ".001" count="0,1" tag="senseMineral"/>
+
+</append>
+
+<append xpath="/blocks/block[@name='terrDirt']">
+
+	<drop event="Harvest" name="resourceCrushedSand" count="0,5" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceClayLump" count="0,10" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceCoal" prob=".3" count="0,1" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceOilShale" prob=".3" count="0,1" tag="senseValuables"/>
+	<drop event="Harvest" name="resourcePaper" prob=".05" count="0,1" tag="senseValuables"/>	
+	<drop event="Harvest" name="casinoCoin" prob=".05" count="0,1" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceCloth" prob=".05" count="0,1" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceFeather" prob=".05" count="0,1" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="0,1" tag="senseValuables"/>
+
+</append>
+
+<append xpath="/blocks/block[@name='terrSnow']">
+
+	<drop event="Harvest" name="resourceCrushedSand" count="0,5" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceClayLump" count="0,10" tag="senseValuables"/>
+	<drop event="Harvest" name="resourcePaper" prob=".05" count="0,1" tag="senseValuables"/>	
+	<drop event="Harvest" name="casinoCoin" prob=".05" count="0,1" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceCloth" prob=".05" count="0,1" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceFeather" prob=".05" count="0,1" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="0,1" tag="senseValuables"/>
+
+</append>
+
+<append xpath="/blocks/block[@name='terrDesertGround']">
+
+	<drop event="Harvest" name="resourceCrushedSand" count="0,5" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceClayLump" count="0,10" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceCoal" prob=".3" count="0,1" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceOilShale" prob=".3" count="0,1" tag="senseValuables"/>
+	<drop event="Harvest" name="casinoCoin" prob=".05" count="0,1" tag="senseValuables"/>
+	<drop event="Harvest" name="resourcePaper" prob=".05" count="0,1" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceCloth" prob=".05" count="0,1" tag="senseValuables"/>
+	<drop event="Harvest" name="resourceFeather" prob=".05" count="0,1" tag="senseValuables"/>
+
+</append>
+
+</configs>

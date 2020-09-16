@@ -1,0 +1,11 @@
+<ZMXuiBBMxl_STYLES>
+
+<!--	// SMX // Big Backpack XL Style Conversion -->
+
+		<set xpath="/styles/style[@name='smxui_backpack_itemstack_72']/style_entry[@name='width']/@value">57</set>
+		<set xpath="/styles/style[@name='smxui_backpack_itemstack_72']/style_entry[@name='height']/@value">57</set>
+
+		<set xpath="/styles/style[@name='smxui_lootwindow_itemstack_65']/style_entry[@name='width']/@value">57</set>
+		<set xpath="/styles/style[@name='smxui_lootwindow_itemstack_65']/style_entry[@name='height']/@value">57</set>
+
+</ZMXuiBBMxl_STYLES>

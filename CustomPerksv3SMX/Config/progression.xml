@@ -1,0 +1,1155 @@
+<configs>
+
+<insertAfter xpath="/progression/attributes/attribute[@name='attBooks']">
+	<attribute name="attPrestige" name_key="Prestige Skills" desc_key="Spend some of that redundant skill points on some neat extra effects!" icon="cp_prestige" min_level="0" max_level="0" base_skill_point_cost="0"/>
+</insertAfter>
+
+<insertBefore xpath="/progression/perks/perk[@name='perkDemolitionsExpert']">
+
+		<perk name="perkAcrobatics" parent="attPrestige" name_key="Acrobatics" desc_key="You're pretty agile and learned how to avoid injuries from falling uncontrolled." icon="cp_acrobatics">
+			<effect_group>
+		<!--safe fall distance regulated in buffs.xml-->
+				<effect_description level="1" desc_base="+ 1m Safe Fall Distance" long_desc_key="Increase your safe fall distance by 1m."/>
+				<effect_description level="2" desc_base="+ 2m Safe Fall Distance" long_desc_key="Increase your safe fall distance by 2m."/>
+				<effect_description level="3" desc_base="+ 3m Safe Fall Distance" long_desc_key="Increase your safe fall distance by 3m."/>
+				<effect_description level="4" desc_base="+ 4m Safe Fall Distance" long_desc_key="Increase your safe fall distance by 4m."/>
+				<effect_description level="5" desc_base="+ 5m Safe Fall Distance" long_desc_key="Increase your safe fall distance by 5m."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkHeatSyn" parent="attPrestige" name_key="Heat Synergy" desc_key="You've lived in the desert for a long time thus heat has less effects on you." icon="cp_heatsyn">
+			<effect_group>
+				<passive_effect name="HyperthermalResist" operation="base_add" level="2" value="9"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" level="1" value="5"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" level="3" value="12"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" level="4" value="14"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" level="5" value="15"/>
+
+				<effect_description level="1" desc_base="+ 5 Heat Resistance" long_desc_key="Increase your resistance agains heat by 5"/>
+				<effect_description level="2" desc_base="+ 9 Heat Resistance" long_desc_key="Increase your resistance agains heat by 9"/>
+				<effect_description level="3" desc_base="+ 12 Heat Resistance" long_desc_key="Increase your resistance agains heat by 12"/>
+				<effect_description level="4" desc_base="+ 14 Heat Resistance" long_desc_key="Increase your resistance agains heat by 14"/>
+				<effect_description level="5" desc_base="+ 15 Heat Resistance" long_desc_key="Increase your resistance agains heat by 15"/>
+			</effect_group>
+		</perk>
+
+			<perk name="perkColdSyn" parent="attPrestige" name_key="Cold Synergy" desc_key="You've lived in the frosty mountains for a long time thus cold has less effects on you." icon="cp_coldsyn">
+			<effect_group>
+				<passive_effect name="HypothermalResist" operation="base_add" level="1" value="5"/>
+				<passive_effect name="HypothermalResist" operation="base_add" level="2" value="9"/>
+				<passive_effect name="HypothermalResist" operation="base_add" level="3" value="12"/>
+				<passive_effect name="HypothermalResist" operation="base_add" level="4" value="14"/>
+				<passive_effect name="HypothermalResist" operation="base_add" level="5" value="15"/>
+
+				<effect_description level="1" desc_base="+ 5 Cold Resistance" long_desc_key="Increase your resistance agains cold by 5"/>
+				<effect_description level="2" desc_base="+ 9 Cold Resistance" long_desc_key="Increase your resistance agains cold by 9"/>
+				<effect_description level="3" desc_base="+ 12 Cold Resistance" long_desc_key="Increase your resistance agains cold by 12"/>
+				<effect_description level="4" desc_base="+ 14 Cold Resistance" long_desc_key="Increase your resistance agains cold by 14"/>
+				<effect_description level="5" desc_base="+ 15 Cold Resistance" long_desc_key="Increase your resistance agains cold by 15"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkMaxHP" max_level="10" parent="attPrestige" name_key="Maximum Health" desc_key="Increase your hardiness and thus your maximum health." icon="cp_maxHP">
+			<effect_group>
+
+				<passive_effect name="HealthMax" operation="base_add" value="12,60" level="1,5"/>
+				<passive_effect name="HealthMax" operation="base_add" value="68,100" level="6,10"/>
+
+				<effect_description level="1" desc_base="+ 12 Maximum Health" long_desc_key="Increase your maximum health by 12"/>
+				<effect_description level="2" desc_base="+ 24 Maximum Health" long_desc_key="Increase your maximum health by 24"/>
+				<effect_description level="3" desc_base="+ 36 Maximum Health" long_desc_key="Increase your maximum health by 36"/>
+				<effect_description level="4" desc_base="+ 48 Maximum Health" long_desc_key="Increase your maximum health by 48"/>
+				<effect_description level="5" desc_base="+ 60 Maximum Health" long_desc_key="Increase your maximum health by 60"/>
+				<effect_description level="6" desc_base="+ 68 Maximum Health " long_desc_key="Increase your maximum health by 68"/>
+				<effect_description level="7" desc_base="+ 76 Maximum Health" long_desc_key="Increase your maximum health by 76"/>
+				<effect_description level="8" desc_base="+ 84 Maximum Health" long_desc_key="Increase your maximum health by 84"/>
+				<effect_description level="9" desc_base="+ 92 Maximum Health" long_desc_key="Increase your maximum health by 92"/>
+				<effect_description level="10" desc_base="+ 100 Maximum Health" long_desc_key="Increase your maximum health by 100"/>
+
+			</effect_group>
+		</perk>
+
+		<perk name="perkMaxSta" max_level="10" parent="attPrestige" name_key="Maximum Stamina" desc_key="Increase your endurance and thus your maximum stamina." icon="cp_maxsta">
+			<effect_group>
+				<passive_effect name="StaminaMax" operation="base_add" value="12,60" level="1,5"/>
+				<passive_effect name="StaminaMax" operation="base_add" value="68,100" level="6,10"/>
+
+				<effect_description level="1" desc_base="+ 12 Maximum Stamina" long_desc_key="Increase your maximum Stamina by 12"/>
+				<effect_description level="2" desc_base="+ 24 Maximum Stamina" long_desc_key="Increase your maximum Stamina by 24"/>
+				<effect_description level="3" desc_base="+ 36 Maximum Stamina" long_desc_key="Increase your maximum Stamina by 36"/>
+				<effect_description level="4" desc_base="+ 48 Maximum Stamina" long_desc_key="Increase your maximum Stamina by 48"/>
+				<effect_description level="5" desc_base="+ 60 Maximum Stamina" long_desc_key="Increase your maximum Stamina by 60"/>
+				<effect_description level="6" desc_base="+ 68 Maximum Stamina " long_desc_key="Increase your maximum Stamina by 68"/>
+				<effect_description level="7" desc_base="+ 76 Maximum Stamina" long_desc_key="Increase your maximum Stamina by 76"/>
+				<effect_description level="8" desc_base="+ 84 Maximum Stamina" long_desc_key="Increase your maximum Stamina by 84"/>
+				<effect_description level="9" desc_base="+ 92 Maximum Stamina" long_desc_key="Increase your maximum Stamina by 92"/>
+				<effect_description level="10" desc_base="+ 100 Maximum Stamina" long_desc_key="Increase your maximum Stamina by 100"/>
+		</effect_group>
+		</perk>
+
+		<perk name="perkDmgRes" max_level="10" parent="attPrestige" name_key="Damage Resistance" desc_key="Increase your hardiness and thus your resistance to damage." icon="cp_dmgres">
+			<effect_group>
+				<passive_effect name="HealthLoss" operation="perc_subtract" level="1,5" value=".024,.12"/>
+				<passive_effect name="HealthLoss" operation="perc_subtract" level="6,10" value=".136,.20"/>
+
+				<effect_description level="1" desc_base="+ 2.4% Damage Resistance" long_desc_key="Increase your Damage Resistance by 2.4%"/>
+				<effect_description level="2" desc_base="+ 4.8% Damage Resistance" long_desc_key="Increase your Damage Resistance by 4.8%"/>
+				<effect_description level="3" desc_base="+ 7.2% Damage Resistance" long_desc_key="Increase your Damage Resistance by 7.2%"/>
+				<effect_description level="4" desc_base="+ 9.6% Damage Resistance" long_desc_key="Increase your Damage Resistance by 9.6%"/>
+				<effect_description level="5" desc_base="+ 12% Damage Resistance" long_desc_key="Increase your Damage Resistance by 12%"/>
+				<effect_description level="6" desc_base="+ 13.6% Damage Resistance" long_desc_key="Increase yourDamage Resistance  by 13.6%"/>
+				<effect_description level="7" desc_base="+ 15.2% Damage Resistance" long_desc_key="Increase your Damage Resistance by 15.2%"/>
+				<effect_description level="8" desc_base="+ 16.8% Damage Resistance" long_desc_key="Increase your Damage Resistance by 16.8%"/>
+				<effect_description level="9" desc_base="+ 18.4% Damage Resistance" long_desc_key="Increase your Damage Resistance by 18.4%"/>
+				<effect_description level="10" desc_base="+ 20% Damage Resistance" long_desc_key="Increase your Damage Resistance by 20%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkStaLoss" max_level="10" parent="attPrestige" name_key="Vigor" desc_key="Swinging stuff around the whole time accustomed you to them so now it's less exerting. Lose less Stamina per melee swing." icon="cp_staloss">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="melee"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" level="1,5" value="-.03,-.15"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" level="6,10" value="-.17,-.25"/>
+
+				<effect_description level="1" desc_base="- 3% Stamina Loss" long_desc_key="Lose 3% less stamina while swinging melee tools and weapons"/>
+				<effect_description level="2" desc_base="- 6% Stamina Loss" long_desc_key="Lose 6% less stamina while swinging melee tools and weapons"/>
+				<effect_description level="3" desc_base="- 9% Stamina Loss" long_desc_key="Lose 9% less stamina while swinging melee tools and weapons"/>
+				<effect_description level="4" desc_base="- 12% Stamina Loss" long_desc_key="Lose 12% less stamina while swinging melee tools and weapons"/>
+				<effect_description level="5" desc_base="- 15% Stamina Loss" long_desc_key="Lose 15% less stamina while swinging melee tools and weapons"/>
+				<effect_description level="6" desc_base="- 17% Stamina Loss" long_desc_key="Lose 17% less stamina while swinging melee tools and weapons"/>
+				<effect_description level="7" desc_base="- 19% Stamina Loss" long_desc_key="Lose 19% less stamina while swinging melee tools and weapons"/>
+				<effect_description level="8" desc_base="- 21% Stamina Loss" long_desc_key="Lose 21% less stamina while swinging melee tools and weapons"/>
+				<effect_description level="9" desc_base="- 23% Stamina Loss" long_desc_key="Lose 23% less stamina while swinging melee tools and weapons"/>
+				<effect_description level="10" desc_base="- 25% Stamina Loss" long_desc_key="Lose 25% less stamina while swinging melee tools and weapons"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkStaRegen" max_level="10" parent="attPrestige" name_key="Constancy" desc_key="All this cardio workout increased your endurance vastly. Regenerate more stamina at all times." icon="cp_staregen">
+			<effect_group>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" level="1,5" value=".03,.15"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" level="6,10" value=".17,.25"/>
+
+				<effect_description level="1" desc_base="+ 3% Stamina Regeneration" long_desc_key="Regenerate 3% more stamina at all times"/>
+				<effect_description level="2" desc_base="+ 6% Stamina Regeneration" long_desc_key="Regenerate 6% more stamina at all times"/>
+				<effect_description level="3" desc_base="+ 9% Stamina Regeneration" long_desc_key="Regenerate 9% more stamina at all times"/>
+				<effect_description level="4" desc_base="+ 12% Stamina Regeneration" long_desc_key="Regenerate 12% more stamina at all times"/>
+				<effect_description level="5" desc_base="+ 15% Stamina Regeneration" long_desc_key="Regenerate 15% more stamina at all times"/>
+				<effect_description level="6" desc_base="+ 17% Stamina Regeneration" long_desc_key="Regenerate 17% more stamina at all times"/>
+				<effect_description level="7" desc_base="+ 19% Stamina Regeneration" long_desc_key="Regenerate 19% more stamina at all times"/>
+				<effect_description level="8" desc_base="+ 21% Stamina Regeneration" long_desc_key="Regenerate 21% more stamina at all times"/>
+				<effect_description level="9" desc_base="+ 23% Stamina Regeneration" long_desc_key="Regenerate 23% more stamina at all times"/>
+				<effect_description level="10" desc_base="+ 25% Stamina Regeneration" long_desc_key="Regenerate 25% more stamina at all times"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkRecuperate" max_level="10" parent="attPrestige" name_key="Recuperate" desc_key="You've got a very healthy body and can regenerate even faster than other people. (For comparison: level 5 of healing factor gives you the same amount as lvl 10 of this. So you will regenerate 1 health every 2 seconds with both perks fully skilled.)" icon="cp_Recuperate">
+			<effect_group>
+				<passive_effect name="HealthChangeOT" operation="base_add" level="1,5" value=".03,.15"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" level="6,10" value=".17,.25"/>
+
+				<effect_description level="1" desc_base="+ 0.03 Health Regeneration per sec." long_desc_key="Regenerate an additional 0.03 health per second at all times"/>
+				<effect_description level="2" desc_base="+ 0.06 Health Regeneration per sec." long_desc_key="Regenerate an additional 0.06 health per second at all times"/>
+				<effect_description level="3" desc_base="+ 0.09 Health Regeneration per sec." long_desc_key="Regenerate an additional 0.09 health per second at all times"/>
+				<effect_description level="4" desc_base="+ 0.12 Health Regeneration per sec." long_desc_key="Regenerate an additional 0.12 health per second at all times"/>
+				<effect_description level="5" desc_base="+ 0.15 Health Regeneration per sec." long_desc_key="Regenerate an additional 0.15 health per second at all times"/>
+				<effect_description level="6" desc_base="+ 0.17 Health Regeneration per sec." long_desc_key="Regenerate an additional 0.17 health per second at all times"/>
+				<effect_description level="7" desc_base="+ 0.19 Health Regeneration per sec." long_desc_key="Regenerate an additional 0.19 health per second at all times"/>
+				<effect_description level="8" desc_base="+ 0.21 Health Regeneration per sec." long_desc_key="Regenerate an additional 0.21 health per second at all times"/>
+				<effect_description level="9" desc_base="+ 0.23 Health Regeneration per sec." long_desc_key="Regenerate an additional 0.23 health per second at all times"/>
+				<effect_description level="10" desc_base="+ 0.25 Health Regeneration per sec." long_desc_key="Regenerate an additional 0.25 health per second at all times"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkSuperiorMetabolism" max_level="10" parent="attPrestige" name_key="Superior Metabolism" desc_key="Your organism takes it easy. Lose even less food and water from physical exertion." icon="cp_superiormetabolism">
+			<effect_group>
+
+				<passive_effect name="WaterLossPerHealthPointGained" operation="perc_subtract" level="1,5" value=".03,.15"/>
+				<passive_effect name="WaterLossPerHealthPointGained" operation="perc_subtract" level="6,10" value=".17,.25"/>
+
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_subtract" level="1,5" value=".03,.15"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_subtract" level="6,10" value=".17,.25"/>
+
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_subtract" level="1,5" value=".03,.15"/>
+				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_subtract" level="6,10" value=".17,.25"/>
+
+				<effect_description level="1" desc_base="- 3% Food and Water loss" long_desc_key="Lose 3% less food and water from physical exertion."/>
+				<effect_description level="2" desc_base="- 6% Food and Water loss" long_desc_key="Lose 6% less food and water from physical exertion."/>
+				<effect_description level="3" desc_base="- 9% Food and Water loss" long_desc_key="Lose 9% less food and water from physical exertion."/>
+				<effect_description level="4" desc_base="- 12% Food and Water loss" long_desc_key="Lose 12% less food and water from physical exertion."/>
+				<effect_description level="5" desc_base="- 15% Food and Water loss" long_desc_key="Lose 15% less food and water from physical exertion."/>
+				<effect_description level="6" desc_base="- 17% Food and Water loss" long_desc_key="Lose 17% less food and water from physical exertion."/>
+				<effect_description level="7" desc_base="- 19% Food and Water loss" long_desc_key="Lose 19% less food and water from physical exertion."/>
+				<effect_description level="8" desc_base="- 21% Food and Water loss" long_desc_key="Lose 21% less food and water from physical exertion."/>
+				<effect_description level="9" desc_base="- 23% Food and Water loss" long_desc_key="Lose 23% less food and water from physical exertion."/>
+				<effect_description level="10" desc_base="- 25% Food and Water loss" long_desc_key="Lose 25% less food and water from physical exertion."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkMobility" max_level="10" parent="attPrestige" name_key="Mobility" desc_key="Running hundreds and thousands of miles earned you some well conditioned legs. You're now able too move faster independent of the circumstances." icon="cp_mobility">
+			<effect_group>
+				<passive_effect name="Mobility" operation="perc_add" value=".04,.2" level="1,5"/>
+				<passive_effect name="Mobility" operation="perc_add" value=".22,.3" level="6,10"/>
+
+				<effect_description level="1" desc_base="+ 4% Mobility" long_desc_key="Increase your mobility by 4%"/>
+				<effect_description level="2" desc_base="+ 8% Mobility" long_desc_key="Increase your mobility by 8%"/>
+				<effect_description level="3" desc_base="+ 12% Mobility" long_desc_key="Increase your mobility by 12%"/>
+				<effect_description level="4" desc_base="+ 16% Mobility" long_desc_key="Increase your mobility by 16%"/>
+				<effect_description level="5" desc_base="+ 20% Mobility" long_desc_key="Increase your mobility by 20%"/>
+				<effect_description level="6" desc_base="+ 22% Mobility " long_desc_key="Increase your mobility by 22%"/>
+				<effect_description level="7" desc_base="+ 24% Mobility" long_desc_key="Increase your mobility by 24%"/>
+				<effect_description level="8" desc_base="+ 26% Mobility" long_desc_key="Increase your mobility by 26%"/>
+				<effect_description level="9" desc_base="+ 28% Mobility" long_desc_key="Increase your mobility by 28%"/>
+				<effect_description level="10" desc_base="+ 30% Mobility" long_desc_key="Increase your mobility by 30%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkMiningMastery" max_level="10" parent="attPrestige" name_key="Mining Mastery" desc_key="You've acquired the knowledge how to gather more resources while mining." icon="cp_miningmastery">
+			<effect_group>
+				<passive_effect name="HarvestCount" operation="perc_add" level="1,5" value=".12,.6" tags="oreWoodHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add" level="6,10" value=".68,.1" tags="oreWoodHarvest"/>
+
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.1" level="5,9"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2" level="10"/>
+
+				<effect_description level="1" desc_base="+ 12% more stone, ore and lumber" long_desc_key="Gather rate of stone, ores and lumber increased by 12%"/>
+				<effect_description level="2" desc_base="+ 24% more stone, ore and lumber" long_desc_key="Gather rate of stone, ores and lumber increased by 24%"/>
+				<effect_description level="3" desc_base="+ 36% more stone, ore and lumber" long_desc_key="Gather rate of stone, ores and lumber increased by 36%"/>
+				<effect_description level="4" desc_base="+ 48% more stone, ore and lumber" long_desc_key="Gather rate of stone, ores and lumber increased by 48%"/>
+				<effect_description level="5" desc_base="+ 60% more stone, ore and lumber, +10% Block Damage" long_desc_key="Gather rate of stone, ores and lumber increased by 60%. Increase any block damage you cause by 10%."/>
+				<effect_description level="6" desc_base="+ 68% more stone, ore and lumber" long_desc_key="Gather rate of stone, ores and lumber increased by 68%"/>
+				<effect_description level="7" desc_base="+ 76% more stone, ore and lumber" long_desc_key="Gather rate of stone, ores and lumber increased by 76%"/>
+				<effect_description level="8" desc_base="+ 84% more stone, ore and lumber" long_desc_key="Gather rate of stone, ores and lumber increased by 84%"/>
+				<effect_description level="9" desc_base="+ 92% more stone, ore and lumber" long_desc_key="Gather rate of stone, ores and lumber increased by 92%"/>
+				<effect_description level="10" desc_base="+ 100% more stone, ore and lumber, + 20% Block Damage" long_desc_key="Gather rate of stone, ores and lumber increased by 100%. Increase any block damage you cause by 20%."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkHealingArts" parent="attPrestige" name_key="HealingArts" desc_key="You've learned how to properly treat wounds and increase the effectivity of your attempts. (additive bonus)" icon="cp_healingarts">
+			<effect_group>
+		<!--health per tick regulated in buffs.xml-->
+				<effect_description level="1" desc_base="+ 25% Medical Healing" long_desc_key="Increase the healing efficiency of medical items by 25%."/>
+				<effect_description level="2" desc_base="+ 45% Medical Healing" long_desc_key="Increase the healing efficiency of medical items by 45%."/>
+				<effect_description level="3" desc_base="+ 60% Medical Healing" long_desc_key="Increase the healing efficiency of medical items by 60%."/>
+				<effect_description level="4" desc_base="+ 70% Medical Healing" long_desc_key="Increase the healing efficiency of medical items by 70%."/>
+				<effect_description level="5" desc_base="+ 75% Medical Healing" long_desc_key="Increase the healing efficiency of medical items by 75%."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkArmorSpecialist" parent="attPrestige" name_key="Armor Specialist" desc_key="Your armor feels like a second skin an thus is even more durable now. (In addition to the corresponding armor perk, the last rank will nullify all damage to armor)." icon="cp_armorspecialist">
+			<effect_group>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.12" tags="heavyArmorDeg,lightArmorDeg"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="2" value="-.20" tags="heavyArmorDeg,lightArmorDeg"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="3" value="-.26" tags="heavyArmorDeg,lightArmorDeg"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="4" value="-.31" tags="heavyArmorDeg,lightArmorDeg"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="5" value="-.34" tags="heavyArmorDeg,lightArmorDeg"/>
+
+				<effect_description level="1" desc_base="- 12% Armor Wearout" long_desc_key="Decrease the wearout of your armor by an additional 12%"/>
+				<effect_description level="2" desc_base="- 20% Armor Wearout" long_desc_key="Decrease the wearout of your armor by an additional 20%"/>
+				<effect_description level="3" desc_base="- 26% Armor Wearout" long_desc_key="Decrease the wearout of your armor by an additional 26%"/>
+				<effect_description level="4" desc_base="- 31% Armor Wearout" long_desc_key="Decrease the wearout of your armor by an additional 31%"/>
+				<effect_description level="5" desc_base="- 34% Armor Wearout" long_desc_key="Decrease the wearout of your armor by an additional 34%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWeaponSpecialist" parent="attPrestige" name_key="Weapon Specialist" desc_key="You know how to properly maintain your weapons, which is why they degrade at a slower rate." icon="cp_weaponspecialist">
+			<effect_group>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.20" tags="melee,ranged"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="2" value="-.31" tags="melee,ranged"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="3" value="-.39" tags="melee,ranged"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="4" value="-.45" tags="melee,ranged"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="5" value="-.5" tags="melee,ranged"/>
+
+				<effect_description level="1" desc_base="- 20% Weapon Wearout" long_desc_key="Decrease the wearout of your weapons by 20%"/>
+				<effect_description level="2" desc_base="- 31% Weapon Wearout" long_desc_key="Decrease the wearout of your weapons by 31%"/>
+				<effect_description level="3" desc_base="- 39% Weapon Wearout" long_desc_key="Decrease the wearout of your weapons by 39%"/>
+				<effect_description level="4" desc_base="- 45% Weapon Wearout" long_desc_key="Decrease the wearout of your weapons by 45%"/>
+				<effect_description level="5" desc_base="- 50% Weapon Wearout" long_desc_key="Decrease the wearout of your weapons by 50%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkXPBonus" max_level="10" parent="attPrestige" name_key="Extra Experience" desc_key="Increase your smarts and thus learn faster." icon="cp_xpbonus">
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".12,.6 " level="1,5"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".68,1 " level="6,10"/>
+
+				<effect_description level="1" desc_base="+ 12% XP Gain" long_desc_key="Increase your earned experience by 12%"/>
+				<effect_description level="2" desc_base="+ 24% XP Gain" long_desc_key="Increase your earned experience by 24%"/>
+				<effect_description level="3" desc_base="+ 36% XP Gain" long_desc_key="Increase your earned experience by 36%"/>
+				<effect_description level="4" desc_base="+ 48% XP Gain" long_desc_key="Increase your earned experience by 48%"/>
+				<effect_description level="5" desc_base="+ 60% XP Gain" long_desc_key="Increase your earned experience by 60%"/>
+				<effect_description level="6" desc_base="+ 68% XP Gain" long_desc_key="Increase yourearned experience by 68%"/>
+				<effect_description level="7" desc_base="+ 76% XP Gain" long_desc_key="Increase your earned experience by 76%"/>
+				<effect_description level="8" desc_base="+ 84% XP Gain" long_desc_key="Increase your earned experience by 84%"/>
+				<effect_description level="9" desc_base="+ 92% XP Gain" long_desc_key="Increase your earned experience by 92%"/>
+				<effect_description level="10" desc_base="+ 100% XP Gain" long_desc_key="Increase your earned experience by 100%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkCraftSpeed" max_level="10" parent="attPrestige" name_key="Crafting Speed" desc_key="Your nimble fingers allow you to craft even faster than before." icon="cp_craftspeed">
+			<effect_group>
+    		<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-.08,-.4"/>
+    		<passive_effect name="CraftingTime" operation="perc_add" level="6,10" value="-.46,-.7"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="10" value="1"/>
+
+				<effect_description level="1" desc_base="+ 8% Crafting Speed" long_desc_key="Increase your crafting speed by 8%"/>
+				<effect_description level="2" desc_base="+ 16% Crafting Speed" long_desc_key="Increase your crafting speed by 16%"/>
+				<effect_description level="3" desc_base="+ 24% Crafting Speed" long_desc_key="Increase your crafting speed by 24%"/>
+				<effect_description level="4" desc_base="+ 32% Crafting Speed" long_desc_key="Increase your crafting speed by 32%"/>
+				<effect_description level="5" desc_base="+ 40% Crafting Speed" long_desc_key="Increase your crafting speed by 40%"/>
+				<effect_description level="6" desc_base="+ 46% Crafting Speed" long_desc_key="Increase your crafting speed by 46%"/>
+				<effect_description level="7" desc_base="+ 52% Crafting Speed" long_desc_key="Increase your crafting speed by 52%"/>
+				<effect_description level="8" desc_base="+ 58% Crafting Speed" long_desc_key="Increase your crafting speed by 58%"/>
+				<effect_description level="9" desc_base="+ 64% Crafting Speed" long_desc_key="Increase your crafting speed by 64%"/>
+				<effect_description level="10" desc_base="+ 70% Crafting Speed, +1 Crafting Tier" long_desc_key="Increase your crafting speed by 70% and add an additional crafting tier."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkRascal" max_level="10" parent="attPrestige" name_key="Rascal" desc_key="You know how to properly bargain. Only true rascals may get the best deals." icon="cp_rascal">
+			<effect_group>
+
+			<passive_effect name="BarteringBuying" operation="base_add" level="1,5" value=".02,.1"/>
+			<passive_effect name="BarteringSelling" operation="base_add" level="6,10" value=".11,.15"/>
+			<passive_effect name="SecretStash" operation="base_add" level="1,5" value="600,3000"/>
+			<passive_effect name="SecretStash" operation="base_add" level="6,10" value="3400,5000"/>
+
+				<effect_description level="1" desc_base="2% better deals" long_desc_key="You're able to get 2% better prices while selling and buying at traders."/>
+				<effect_description level="2" desc_base="4% better deals" long_desc_key="You're able to get 4% better prices while selling and buying at traders."/>
+				<effect_description level="3" desc_base="6% better deals" long_desc_key="You're able to get 6% better prices while selling and buying at traders."/>
+				<effect_description level="4" desc_base="8% better deals" long_desc_key="You're able to get 8% better prices while selling and buying at traders."/>
+				<effect_description level="5" desc_base="10% better deals" long_desc_key="You're able to get 10% better prices while selling and buying at traders."/>				
+				<effect_description level="6" desc_base="11% better deals" long_desc_key="You're able to get 11% better prices while selling and buying at traders."/>
+				<effect_description level="7" desc_base="12% better deals" long_desc_key="You're able to get 12% better prices while selling and buying at traders."/>
+				<effect_description level="8" desc_base="13% better deals" long_desc_key="You're able to get 13% better prices while selling and buying at traders."/>
+				<effect_description level="9" desc_base="14% better deals" long_desc_key="You're able to get 14% better prices while selling and buying at traders."/>
+				<effect_description level="10" desc_base="15% better deals" long_desc_key="You're able to get 15% better prices while selling and buying at traders."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkFoodEngineering" max_level="10" parent="attPrestige" name_key="Food Engineering" desc_key="You know how to properly work with food, how to use it efficiently and get the most out of your resources" icon="cp_foodengineering">
+			<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="1,5" value="1,6" tags="perkMasterChef"/><!-- fake crafting perk that is used to scale resources -->
+			<passive_effect name="CraftingTier" operation="base_add" level="6,10" value="7,10" tags="perkMasterChef"/>
+
+			<passive_effect name="HarvestCount" operation="perc_add" level="5,9" value="1,1" tags="cropHarvest,wildCropsHarvest"/>
+			<passive_effect name="HarvestCount" operation="perc_add" level="10" value="2" tags="cropHarvest,wildCropsHarvest"/>
+
+				<effect_description level="1" desc_base="Cooking costs 6% less resources" long_desc_key="You're able to cook more efficiently, using 6% less resources."/>
+				<effect_description level="2" desc_base="Cooking costs 12% less resources" long_desc_key="You're able to cook more efficiently, using 12% less resources."/>
+				<effect_description level="3" desc_base="Cooking costs 18% less resources" long_desc_key="You're able to cook more efficiently, using 18% less resources."/>
+				<effect_description level="4" desc_base="Cooking costs 24% less resources" long_desc_key="You're able to cook more efficiently, using 24% less resources."/>
+				<effect_description level="5" desc_base="Cooking costs 30% less resources, gather one additional crop" long_desc_key="You're able to cook more efficiently, using 30% less resources. Also your crops get more fertile, increasing your harvest by 1. "/>				
+				<effect_description level="6" desc_base="Cooking costs 34% less resources" long_desc_key="You're able to cook more efficiently, using 34% less resourcess."/>
+				<effect_description level="7" desc_base="Cooking costs 38% less resources" long_desc_key="You're able to cook more efficiently, using 38% less resourcess."/>
+				<effect_description level="8" desc_base="Cooking costs 42% less resources" long_desc_key="You're able to cook more efficiently, using 42% less resourcess."/>
+				<effect_description level="9" desc_base="Cooking costs 46% less resources" long_desc_key="You're able to cook more efficiently, using 46% less resourcess."/>
+				<effect_description level="10" desc_base="Cooking costs 50% less resources, gather two additional crops" long_desc_key="You're able to cook more efficiently, using 50% less resources. Also your crops get more fertile, increasing your harvest by 2."/>
+			</effect_group>
+		</perk>
+
+
+		<perk name="perkRevered" max_level="10" parent="attPrestige" name_key="Revered" desc_key="You've made yourself quite the name and people are now even more grateful for your help in these times." icon="cp_revered">
+			<effect_group>
+				<passive_effect name="QuestBonusItemReward" operation="perc_add" level="1,5" value=".4,2"/>
+				<passive_effect name="QuestBonusItemReward" operation="perc_add" level="6,10" value="2.2,3"/>
+				
+				<passive_effect name="QuestRewardChoiceCount" operation="base_add" level="10" value="1"/>
+
+				<effect_description level="1" desc_base="+ 40% Quest Reward" long_desc_key="Increase the amount of Quest Rewards by 40%"/>
+				<effect_description level="2" desc_base="+ 80% Quest Reward" long_desc_key="Increase the amount of Quest Rewards by 80%"/>
+				<effect_description level="3" desc_base="+ 120% Quest Reward" long_desc_key="Increase the amount of Quest Rewards by 120%"/>
+				<effect_description level="4" desc_base="+ 160% Quest Reward" long_desc_key="Increase the amount of Quest Rewards by 160%"/>
+				<effect_description level="5" desc_base="+ 200% Quest Reward" long_desc_key="Increase the amount of Quest Rewards by 200%"/>
+				<effect_description level="6" desc_base="+ 220% Quest Reward" long_desc_key="Increase the amount of Quest Rewards by 220%"/>
+				<effect_description level="7" desc_base="+ 240% Quest Reward" long_desc_key="Increase the amount of Quest Rewards by 240%"/>
+				<effect_description level="8" desc_base="+ 260% Quest Reward" long_desc_key="Increase the amount of Quest Rewards by 260%"/>
+				<effect_description level="9" desc_base="+ 280% Quest Reward" long_desc_key="Increase the amount of Quest Rewards by 280%"/>
+				<effect_description level="10" desc_base="+ 300% Quest Reward, choose 1 additional reward" long_desc_key="Increase the amount of Quest Rewards by 300%. Also you may choose an additional reward for quests."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkSalvager" max_level="10" parent="attPrestige" name_key="Disassembling Knowledge" desc_key="You've acquired the knowledge how to gather more resources while salvaging mechanical and electrical objects." icon="cp_salvager">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkSalvageOperations"/>
+
+				<passive_effect name="BlockDamage" operation="perc_add" value=".12,.6" level="1,5"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".68,.1" level="6,10"/>
+
+				<passive_effect name="HarvestCount" operation="perc_add" level="1,5" value=".12,.6" tags="salvageHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add" level="6,10" value=".68,1" tags="salvageHarvest"/>
+
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<effect_description level="1" desc_base="+ 12% more Salvage, Block Damage and 6% Attack Speed" long_desc_key="Gather rate of salvage and block damage increased by 12% and attack speed with disassembling tools is increased by 6%."/>
+				<effect_description level="2" desc_base="+ 24% more Salvage, Block Damage and 12% Attack Speed" long_desc_key="Gather rate of salvage and block damage increased by 24% and attack speed with disassembling tools is increased by 12%."/>
+				<effect_description level="3" desc_base="+ 36% more Salvage, Block Damage and 18% Attack Speed" long_desc_key="Gather rate of salvage and block damage increased by 36% and attack speed with disassembling tools is increased by 18%."/>
+				<effect_description level="4" desc_base="+ 48% more Salvage, Block Damage and 24% Attack Speed" long_desc_key="Gather rate of salvage and block damage increased by 48% and attack speed with disassembling tools is increased by 24%."/>
+				<effect_description level="5" desc_base="+ 60% more Salvage, Block Damage and 30% Attack Speed" long_desc_key="Gather rate of salvage and block damage increased by 60% and attack speed with disassembling tools is increased by 30%."/>
+				<effect_description level="6" desc_base="+ 68% more Salvage, Block Damage and 34% Attack Speed" long_desc_key="Gather rate of salvage and block damage increased by 68% and attack speed with disassembling tools is increased by 34%."/>
+				<effect_description level="7" desc_base="+ 76% more Salvage, Block Damage and 38% Attack Speed" long_desc_key="Gather rate of salvage and block damage increased by 76% and attack speed with disassembling tools is increased by 38%."/>
+				<effect_description level="8" desc_base="+ 84% more Salvage, Block Damage and 42% Attack Speed" long_desc_key="Gather rate of salvage and block damage increased by 84% and attack speed with disassembling tools is increased by 42%."/>
+				<effect_description level="9" desc_base="+ 92% more Salvage, Block Damage and 46% Attack Speed" long_desc_key="Gather rate of salvage and block damage increased by 92% and attack speed with disassembling tools is increased by 46%."/>
+				<effect_description level="10" desc_base="+ 100% more Salvage, Block Damage and 50% Attack Speed" long_desc_key="Gather rate of salvage and block damage increased by 100% and attack speed with disassembling tools is increased by 50%."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkAPM" parent="attPrestige" name_key="Attack Speed" desc_key="All those blows you've dealt evolved into a daily routine. Now you're able too attack even faster." icon="cp_apm">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="melee"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" level="1" value=".10"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" level="2" value=".16"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" level="3" value=".20"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" level="4" value=".23"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" level="5" value=".25"/>
+
+				<effect_description level="1" desc_base="+ 10% Melee Attack Speed" long_desc_key="Increase your Attack Speed with melee tools and weapons by 10%"/>
+				<effect_description level="2" desc_base="+ 16% Melee Attack Speed" long_desc_key="Increase your Attack Speed with melee tools and weapons by 16%"/>
+				<effect_description level="3" desc_base="+ 20% Melee Attack Speed" long_desc_key="Increase your Attack Speed with melee tools and weapons by 20%"/>
+				<effect_description level="4" desc_base="+ 23% Melee Attack Speed" long_desc_key="Increase your Attack Speed with melee tools and weapons by 23%"/>
+				<effect_description level="5" desc_base="+ 25% Melee Attack Speed" long_desc_key="Increase your Attack Speed with melee tools and weapons by 25%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkMD" parent="attPrestige" name_key="Melee Damage" desc_key="Deal more melee damage." icon="cp_md">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="melee"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".10"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="2" value=".16"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="3" value=".20"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="4" value=".23"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="5" value=".25"/>
+
+					<passive_effect name="BlockDamage" operation="perc_add" level="1" value=".10"/>
+					<passive_effect name="BlockDamage" operation="perc_add" level="2" value=".16"/>
+					<passive_effect name="BlockDamage" operation="perc_add" level="3" value=".20"/>
+					<passive_effect name="BlockDamage" operation="perc_add" level="4" value=".23"/>
+					<passive_effect name="BlockDamage" operation="perc_add" level="5" value=".25"/>
+
+				<effect_description level="1" desc_base="+ 10% Melee Damage" long_desc_key="Increase your Melee Damage by 10%"/>
+				<effect_description level="2" desc_base="+ 16% Melee Damage" long_desc_key="Increase your Melee Damage by 16%"/>
+				<effect_description level="3" desc_base="+ 20% Melee Damage" long_desc_key="Increase your Melee Damage by 20%"/>
+				<effect_description level="4" desc_base="+ 23% Melee Damage" long_desc_key="Increase your Melee Damage by 23%"/>
+				<effect_description level="5" desc_base="+ 25% Melee Damage" long_desc_key="Increase your Melee Damage by 25%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkToolMastery" max_level="10" parent="attPrestige" name_key="Tool Mastery" desc_key="Hitting all kinds of materials day and night made you really buff. You're even stronger now." icon="cp_toolmastery">
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkMiner69r,turretMelee"/>
+
+				<passive_effect name="BlockDamage" operation="perc_add" value=".24,1.2" level="1,5"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.36,2" level="6,10"/>
+
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="FallingBlockDamage" operation="perc_add" level="5,9" value="-.15,-.15" />
+				<passive_effect name="FallingBlockDamage" operation="perc_add" level="10" value="-.3" />
+
+				<effect_description level="1" desc_base="+ 24% Block Damage and 6% Attack Speed" long_desc_key="Increase your block damage by 24% and attack speed with tools by 6%"/>
+				<effect_description level="2" desc_base="+ 48% Block Damage and 12% Attack Speed" long_desc_key="Increase your block damage by 48% and attack speed with tools by 12%"/>
+				<effect_description level="3" desc_base="+ 72% Block Damage and 18% Attack Speed" long_desc_key="Increase your block damage by 72% and attack speed with tools by 18%"/>
+				<effect_description level="4" desc_base="+ 96% Block Damage and 24% Attack Speed" long_desc_key="Increase your block damage by 96% and attack speed with tools by 24%"/>
+				<effect_description level="5" desc_base="+ 120% Block Damage and 30% Attack Speed -15% Falling Block Damage" long_desc_key="Increase your block damage by 120% and attack speed with tools by 30%. Decrease the damage you receive through falling blocks by 15%, if you're wearing tools."/>
+				<effect_description level="6" desc_base="+ 136% Block Damage and 34% Attack Speed" long_desc_key="Increase your block damage by 136% and attack speed with tools by 34%"/>
+				<effect_description level="7" desc_base="+ 152% Block Damage and 38% Attack Speed" long_desc_key="Increase your block damage by 152% and attack speed with tools by 38%"/>
+				<effect_description level="8" desc_base="+ 168% Block Damage and 42% Attack Speed" long_desc_key="Increase your block damage by 168% and attack speed with tools by 42%"/>
+				<effect_description level="9" desc_base="+ 184% Block Damage and 46% Attack Speed" long_desc_key="Increase your block damage by 184% and attack speed with tools by 46%"/>
+				<effect_description level="10" desc_base="+ 200% Block Damage and 50% Attack Speed -30% Falling Block Damage" long_desc_key="Increase your block damage by 200% and attack speed with tools by 50%. Decrease the damage you receive through falling blocks by 30%, if you're wearing tools."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkClubMastery" max_level="10" parent="attPrestige" name_key="Club Mastery" desc_key="You've mastered the arts of the club." icon="cp_clubmastery">
+		
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkPummelPete"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="EntityDamage" operation="perc_add" level="5,9" value=".15,.15" tags="running"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".3" tags="running"/>
+
+				<effect_description level="1" desc_base="+ 6% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with clubs by 6%"/>
+				<effect_description level="2" desc_base="+ 12% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with clubs by 12%"/>
+				<effect_description level="3" desc_base="+ 18% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with clubs by 18%"/>
+				<effect_description level="4" desc_base="+ 24% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with clubs by 24%"/>
+				<effect_description level="5" desc_base="+ 30% Entity Damage, Attack Speed, +15% Damage while sprinting." long_desc_key="Increase your entity damage and attack speed with clubs by 30%. Damage is increased by an additional 15% if you hit a target while sprinting."/>
+				<effect_description level="6" desc_base="+ 34% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with clubs by 34%"/>
+				<effect_description level="7" desc_base="+ 38% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with clubs by 38%"/>
+				<effect_description level="8" desc_base="+ 42% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with clubs by 42%"/>
+				<effect_description level="9" desc_base="+ 46% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with clubs by 46%"/>
+				<effect_description level="10" desc_base="+ 50% Entity Dmage, Attack Speed, +30% Damage while sprinting." long_desc_key="Increase your entity damage and attack speed with clubs by 50%. Damage is increased by an additional 30% if you hit a target while sprinting."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkSledgeMastery" max_level="10" parent="attPrestige" name_key="Sledge Mastery" desc_key="You've mastered the arts of the sledgehammer." icon="cp_sledgemastery">
+		
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkSkullCrusher"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="BlockDamage" operation="perc_add" value=".24,1.2" level="1,5"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.36,2" level="6,10"/>
+
+				<effect_description level="1" desc_base="+ 6% Entity Damage, Attack Speed, 24% Block Damage" long_desc_key="Increase your entity damage and attack speed with sledgehammers by 6% and block damage by 24%."/>
+				<effect_description level="2" desc_base="+ 12% Entity Damage, Attack Speed, 48% Block Damage" long_desc_key="Increase your entity damage and attack speed with sledgehammers by 12% and block damage by 48%."/>
+				<effect_description level="3" desc_base="+ 18% Entity Damage, Attack Speed, 72% Block Damage" long_desc_key="Increase your entity damage and attack speed with sledgehammers by 18% and block damage by 72%."/>
+				<effect_description level="4" desc_base="+ 24% Entity Damage, Attack Speed, 96% Block Damage" long_desc_key="Increase your entity damage and attack speed with sledgehammers by 24% and block damage by 96%."/>
+				<effect_description level="5" desc_base="+ 30% Entity Damage, Attack Speed, 120% Block Damage" long_desc_key="Increase your entity damage and attack speed with sledgehammers by 30% and block damage by 120%."/>
+				<effect_description level="6" desc_base="+ 34% Entity Damage, Attack Speed, 136% Block Damage" long_desc_key="Increase your entity damage and attack speed with sledgehammers by 34% and block damage by 136%."/>
+				<effect_description level="7" desc_base="+ 38% Entity Damage, Attack Speed, 152% Block Damage" long_desc_key="Increase your entity damage and attack speed with sledgehammers by 38% and block damage by 152%."/>
+				<effect_description level="8" desc_base="+ 42% Entity Damage, Attack Speed, 168% Block Damage" long_desc_key="Increase your entity damage and attack speed with sledgehammers by 42% and block damage by 168%."/>
+				<effect_description level="9" desc_base="+ 46% Entity Damage, Attack Speed, 184% Block Damage" long_desc_key="Increase your entity damage and attack speed with sledgehammers by 46% and block damage by 184%."/>
+				<effect_description level="10" desc_base="+ 50% Entity Damage, Attack Speed, 200% Block Damage" long_desc_key="Increase your entity damage and attack speed with sledgehammers by 50% and block damage by 200%."/>
+
+			</effect_group>
+		</perk>
+
+		<perk name="perkBrawlMastery" max_level="10" parent="attPrestige" name_key="Brawling Mastery" desc_key="You've mastered the arts of brawling." icon="cp_brawlmastery">
+		
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkBrawler"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="RunSpeed" operation="perc_add" level="5,9" value=".1,.1"/>
+				<passive_effect name="RunSpeed" operation="perc_add" level="10" value=".2"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" level="5,9" value=".1,.1"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" level="10" value=".2"/>
+
+				<effect_description level="1" desc_base="+ 6% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 6%"/>
+				<effect_description level="2" desc_base="+ 12% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 12%"/>
+				<effect_description level="3" desc_base="+ 18% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 18%"/>
+				<effect_description level="4" desc_base="+ 24% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 24%"/>
+				<effect_description level="5" desc_base="+ 30% Entity Damage, Attack Speed, 10% faster movement" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 30%. Also you are able to move 10% faster while using your fists or knuckles."/>
+				<effect_description level="6" desc_base="+ 34% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 34%"/>
+				<effect_description level="7" desc_base="+ 38% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 38%"/>
+				<effect_description level="8" desc_base="+ 42% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 42%"/>
+				<effect_description level="9" desc_base="+ 46% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 46%"/>
+				<effect_description level="10" desc_base="+ 50% Entity Damage, Attack Speed, 20% faster movement" long_desc_key="Increase your entity damage and attack speed with your fists and knuckles by 50%. Also you are able to move 20% faster while using your fists or knuckles."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkBladeMastery" max_level="10" parent="attPrestige" name_key="Blade Mastery" desc_key="You've mastered the arts of the blade." icon="cp_blademastery">
+		
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+			<!--max bleeding stacks managed in buffs.xml -->
+			
+				<effect_description level="1" desc_base="+ 6% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with bladed weapons by 6%"/>
+				<effect_description level="2" desc_base="+ 12% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with bladed weapons by 12%"/>
+				<effect_description level="3" desc_base="+ 18% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with bladed weapons by 18%"/>
+				<effect_description level="4" desc_base="+ 24% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with bladed weapons by 24%"/>
+				<effect_description level="5" desc_base="+ 30% Entity Damage, Attack Speed, +4 max bleeding stacks" long_desc_key="Increase your entity damage and attack speed with bladed weapons by 30%. Also increase the maximum stacks of bleed you can apply by 4."/>
+				<effect_description level="6" desc_base="+ 34% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with bladed weapons by 34%"/>
+				<effect_description level="7" desc_base="+ 38% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with bladed weapons by 38%"/>
+				<effect_description level="8" desc_base="+ 42% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with bladed weapons by 42%"/>
+				<effect_description level="9" desc_base="+ 46% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with bladed weapons by 46%"/>
+				<effect_description level="10" desc_base="+ 50% Entity Damage, Attack Speed, +8 max bleeding stacks" long_desc_key="Increase your entity damage and attack speed with bladed weapons by 50%. Also increase the maximum stacks of bleed you can apply by 8."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkBatonMastery" max_level="10" parent="attPrestige" name_key="Baton Mastery" desc_key="You've mastered the arts of the baton." icon="cp_batonmastery">
+		
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkElectrocutioner"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<effect_description level="1" desc_base="+ 6% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with stun batons by 6%"/>
+				<effect_description level="2" desc_base="+ 12% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with stun batons by 12%"/>
+				<effect_description level="3" desc_base="+ 18% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with stun batons by 18%"/>
+				<effect_description level="4" desc_base="+ 24% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with stun batons by 24%"/>
+				<effect_description level="5" desc_base="+ 30% Entity Damage, Attack Speed, 15% to knock down enemies" long_desc_key="Increase your entity damage and attack speed with stun batons by 30%. Also gives you an additional chance of 15% to knock down enemies."/>
+				<effect_description level="6" desc_base="+ 34% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with stun batons by 34%"/>
+				<effect_description level="7" desc_base="+ 38% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with stun batons by 38%"/>
+				<effect_description level="8" desc_base="+ 42% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with stun batons by 42%"/>
+				<effect_description level="9" desc_base="+ 46% Entity Damage, Attack Speed" long_desc_key="Increase your entity damage and attack speed with stun batons by 46%"/>
+				<effect_description level="10" desc_base="+ 50% Entity Damage, Attack Speed, 30% chance to knock down enemies" long_desc_key="Increase your entity damage and attack speed with stun batons by 50%. Also gives you an additional chance of 30% to knock down enemies."/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+						<requirement name="ProgressionLevel" progression_name="perkBatonMastery" operation="Equals" value="5"/>
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+						<requirement name="ProgressionLevel" progression_name="perkBatonMastery" operation="GTE" value="10"/>
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				</triggered_effect>
+			</effect_group>
+		</perk>
+
+		<perk name="perkSpearMastery" max_level="10" parent="attPrestige" name_key="Spear Mastery" desc_key="You've mastered the arts of the spear." icon="cp_spearmastery">
+		
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkJavelinMaster"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="ProjectileVelocity" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="ProjectileVelocity" operation="perc_add" level="6,10" value=".34,.5"/>
+
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="5,9" value=".25,.25" tags="secondary"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="10" value=".5" tags="secondary"/>
+		
+				<effect_description level="1" desc_base="+ 6% Entity Damage, Range, Attack Speed" long_desc_key="Increase your entity damage, range and attack speed with spears by 6%"/>
+				<effect_description level="2" desc_base="+ 12% Entity Damage, Range, Attack Speed" long_desc_key="Increase your entity damage, range and attack speed with spears by 12%"/>
+				<effect_description level="3" desc_base="+ 18% Entity Damage, Range, Attack Speed" long_desc_key="Increase your entity damage, range and attack speed with spears by 18%"/>
+				<effect_description level="4" desc_base="+ 24% Entity Damage, Range, Attack Speed" long_desc_key="Increase your entity damage, range and attack speed with spears by 24%"/>
+				<effect_description level="5" desc_base="+ 30% Entity Damage, Range, Attack Speed, +25% additional throw damage" long_desc_key="Increase your entity damage, range and attack speed with spears by 30%. Thrown spears deal an additional 25% damage."/>
+				<effect_description level="6" desc_base="+ 34% Entity Damage, Range, Attack Speed" long_desc_key="Increase your entity damage, range and attack speed with spears by 34%"/>
+				<effect_description level="7" desc_base="+ 38% Entity Damage, Range, Attack Speed" long_desc_key="Increase your entity damage, range and attack speed with spears by 38%"/>
+				<effect_description level="8" desc_base="+ 42% Entity Damage, Range, Attack Speed" long_desc_key="Increase your entity damage, range and attack speed with spears by 42%"/>
+				<effect_description level="9" desc_base="+ 46% Entity Damage, Range, Attack Speed" long_desc_key="Increase your entity damage, range and attack speed with spears by 46%"/>
+				<effect_description level="10" desc_base="+ 50% Entity Damage, Range, Attack Speed, +50% additional throw damage" long_desc_key="Increase your entity damage, range and attack speed with spears by 50%. Thrown spears deal an additional 50% damage."/>
+		
+			</effect_group>
+		</perk>
+
+		<perk name="perkRWRange" parent="attPrestige" name_key="Weapon Range" desc_key="Increase the effective shot range of all ranged weapons." icon="cp_rwrange">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="ranged"/>
+
+					<passive_effect name="MaxRange" operation="perc_add" level="1" value=".10"/>/>
+					<passive_effect name="MaxRange" operation="perc_add" level="2" value=".16"/>/>
+					<passive_effect name="MaxRange" operation="perc_add" level="3" value=".20"/>/>
+					<passive_effect name="MaxRange" operation="perc_add" level="4" value=".23"/>/>
+					<passive_effect name="MaxRange" operation="perc_add" level="5" value=".25"/>/>
+
+					<passive_effect name="DamageFalloffRange" operation="perc_add" level="1" value=".10"/>
+					<passive_effect name="DamageFalloffRange" operation="perc_add" level="2" value=".16"/>
+					<passive_effect name="DamageFalloffRange" operation="perc_add" level="3" value=".20"/>
+					<passive_effect name="DamageFalloffRange" operation="perc_add" level="4" value=".23"/>
+					<passive_effect name="DamageFalloffRange" operation="perc_add" level="5" value=".25"/>
+
+				<requirement name="ItemHasTags" tags="perkJavelinMaster,perkArchery"/>
+					<passive_effect name="ProjectileVelocity" operation="perc_add" level="1" value=".10"/>
+					<passive_effect name="ProjectileVelocity" operation="perc_add" level="2" value=".16"/>
+					<passive_effect name="ProjectileVelocity" operation="perc_add" level="3" value=".20"/>
+					<passive_effect name="ProjectileVelocity" operation="perc_add" level="4" value=".23"/>
+					<passive_effect name="ProjectileVelocity" operation="perc_add" level="5" value=".25"/>
+
+				<effect_description level="1" desc_base="+ 10% Range" long_desc_key="Shoot 10% farther before the damage of your weapons starts to fall off."/>
+				<effect_description level="2" desc_base="+ 16% Range" long_desc_key="Shoot 16% farther before the damage of your weapons starts to fall off."/>
+				<effect_description level="3" desc_base="+ 20% Range" long_desc_key="Shoot 20% farther before the damage of your weapons starts to fall off."/>
+				<effect_description level="4" desc_base="+ 23% Range" long_desc_key="Shoot 23% farther before the damage of your weapons starts to fall off."/>
+				<effect_description level="5" desc_base="+ 25% Range" long_desc_key="Shoot 25% farther before the damage of your weapons starts to fall off."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkRPM" parent="attPrestige" name_key="Fire Rate" desc_key="Increase your fire rate." icon="cp_rpm">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="ranged"/>
+					<passive_effect name="RoundsPerMinute" operation="perc_add" level="1" value=".10"/>
+					<passive_effect name="RoundsPerMinute" operation="perc_add" level="2" value=".16"/>
+					<passive_effect name="RoundsPerMinute" operation="perc_add" level="3" value=".20"/>
+					<passive_effect name="RoundsPerMinute" operation="perc_add" level="4" value=".23"/>
+					<passive_effect name="RoundsPerMinute" operation="perc_add" level="5" value=".25"/>
+
+				<effect_description level="1" desc_base="+ 10% Fire Rate" long_desc_key="Increase your Fire Rate by 10%"/>
+				<effect_description level="2" desc_base="+ 16% Fire Rate" long_desc_key="Increase your Fire Rate by 16%"/>
+				<effect_description level="3" desc_base="+ 20% Fire Rate" long_desc_key="Increase your Fire Rate by 20%"/>
+				<effect_description level="4" desc_base="+ 23% Fire Rate" long_desc_key="Increase your Fire Rate by 23%"/>
+				<effect_description level="5" desc_base="+ 25% Fire Rate" long_desc_key="Increase your Fire Rate by 25%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkWH" parent="attPrestige" name_key="Weapon Handling" desc_key="Increase your weapon handling." icon="cp_wh">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="ranged"/>
+					<passive_effect name="WeaponHandling" operation="perc_add" level="1" value=".10"/>
+					<passive_effect name="WeaponHandling" operation="perc_add" level="2" value=".16"/>
+					<passive_effect name="WeaponHandling" operation="perc_add" level="3" value=".20"/>
+					<passive_effect name="WeaponHandling" operation="perc_add" level="4" value=".23"/>
+					<passive_effect name="WeaponHandling" operation="perc_add" level="5" value=".25"/>
+
+				<effect_description level="1" desc_base="+ 10% Weapon Handling" long_desc_key="Increase your weapon handling by 10%"/>
+				<effect_description level="2" desc_base="+ 16% Weapon Handling" long_desc_key="Increase your weapon handling by 16%"/>
+				<effect_description level="3" desc_base="+ 20% Weapon Handling" long_desc_key="Increase your weapon handling by 20%"/>
+				<effect_description level="4" desc_base="+ 23% Weapon Handling" long_desc_key="Increase your weapon handling by 23%"/>
+				<effect_description level="5" desc_base="+ 25% Weapon Handling" long_desc_key="Increase your weapon handling by 25%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkLargeMag" parent="attPrestige" name_key="Larger Magazines" desc_key="Increase your clip size." icon="cp_largemag">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="ranged"/>
+					<passive_effect name="MagazineSize" operation="perc_add" level="1" value=".10"/>
+					<passive_effect name="MagazineSize" operation="perc_add" level="2" value=".16"/>
+					<passive_effect name="MagazineSize" operation="perc_add" level="3" value=".20"/>
+					<passive_effect name="MagazineSize" operation="perc_add" level="4" value=".23"/>
+					<passive_effect name="MagazineSize" operation="perc_add" level="5" value=".25"/>
+
+				<effect_description level="1" desc_base="+ 10% Larger Magazines" long_desc_key="Increase your Magazine Size by 10%"/>
+				<effect_description level="2" desc_base="+ 16% Larger Magazines" long_desc_key="Increase your Magazine Size by 16%"/>
+				<effect_description level="3" desc_base="+ 20% Larger Magazines" long_desc_key="Increase your Magazine Size by 20%"/>
+				<effect_description level="4" desc_base="+ 23% Larger Magazines" long_desc_key="Increase your Magazine Size by 23%"/>
+				<effect_description level="5" desc_base="+ 25% Larger Magazines" long_desc_key="Increase your Magazine Size by 25%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkRSM" parent="attPrestige" name_key="Reload Speed" desc_key="All this reloading earned you some nimble fingers. Reload even faster now."  icon="cp_rsm">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="ranged"/>
+					<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value=".10"/>
+					<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="2" value=".16"/>
+					<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="3" value=".20"/>
+					<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="4" value=".23"/>
+					<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="5" value=".25"/>
+
+				<effect_description level="1" desc_base="+ 10% Reload Speed" long_desc_key="Increase your reload speed by 10%"/>
+				<effect_description level="2" desc_base="+ 16% Reload Speed" long_desc_key="Increase your reload speed by 16%"/>
+				<effect_description level="3" desc_base="+ 20% Reload Speed" long_desc_key="Increase your reload speed by 20%"/>
+				<effect_description level="4" desc_base="+ 23% Reload Speed" long_desc_key="Increase your reload speed by 23%"/>
+				<effect_description level="5" desc_base="+ 25% Reload Speed" long_desc_key="Increase your reload speed by 25%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkRD" parent="attPrestige" name_key="Ranged Damage" desc_key="Deal more ranged damage." icon="cp_rd">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="ranged"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".10"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="2" value=".16"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="3" value=".20"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="4" value=".23"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="5" value=".25"/>
+
+					<passive_effect name="BlockDamage" operation="perc_add" level="1" value=".10"/>
+					<passive_effect name="BlockDamage" operation="perc_add" level="2" value=".16"/>
+					<passive_effect name="BlockDamage" operation="perc_add" level="3" value=".20"/>
+					<passive_effect name="BlockDamage" operation="perc_add" level="4" value=".23"/>
+					<passive_effect name="BlockDamage" operation="perc_add" level="5" value=".25"/>
+
+				<effect_description level="1" desc_base="+ 10% Ranged Damage" long_desc_key="Increase your Ranged Damage by 10%"/>
+				<effect_description level="2" desc_base="+ 16% Ranged Damage" long_desc_key="Increase your Ranged Damage by 16%"/>
+				<effect_description level="3" desc_base="+ 20% Ranged Damage" long_desc_key="Increase your Ranged Damage by 20%"/>
+				<effect_description level="4" desc_base="+ 23% Ranged Damage" long_desc_key="Increase your Ranged Damage by 23%"/>
+				<effect_description level="5" desc_base="+ 25% Ranged Damage" long_desc_key="Increase your Ranged Damage by 25%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkExplosiveMastery" max_level="10" parent="attPrestige" name_key="Explosives Mastery" desc_key="You really do love fireworks, right? Vastly increase your damage with explosives." icon="cp_explosivemastery">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkDemolitionsExpert"/>
+
+				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="BlockDamage" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="DismemberChance" operation="base_add" level="5,9" value=".1,.1"/>
+				<passive_effect name="DismemberChance" operation="base_add" level="10" value=".2"/>
+
+				<effect_description level="1" desc_base="+ 6% Block Damage, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your block damage, entity damage, weapon handling and reload speed with explosives by 6%"/>
+				<effect_description level="2" desc_base="+ 12% Block Damage, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your block damage, entity damage, weapon handling and reload speed with explosives by 12%"/>
+				<effect_description level="3" desc_base="+ 18% Block Damage, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your block damage, entity damage, weapon handling and reload speed with explosives by 18%"/>
+				<effect_description level="4" desc_base="+ 24% Block Damage, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your block damage, entity damage, weapon handling and reload speed with explosives by 24%"/>
+				<effect_description level="5" desc_base="+ 30% Block Damage, Entity Damage, Weapon Handling, Reload Speed, +10% Dismember Chance." long_desc_key="Increase your block damage, entity damage, weapon handling and reload speed with explosives by 30%. Explosives have an additional 10% chance to dismember."/>
+				<effect_description level="6" desc_base="+ 34% Block Damage, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your block damage, entity damage, weapon handling and reload speed with explosives by 34%"/>
+				<effect_description level="7" desc_base="+ 38% Block Damage, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your block damage, entity damage, weapon handling and reload speed with explosives by 38%"/>
+				<effect_description level="8" desc_base="+ 42% Block Damage, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your block damage, entity damage, weapon handling and reload speed with explosives by 42%"/>
+				<effect_description level="9" desc_base="+ 46% Block Damage, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your block damage, entity damage, weapon handling and reload speed with explosives by 46"/>
+				<effect_description level="10" desc_base="+ 50% Block Damage, Entity Damage, Weapon Handling, Reload Speed, +20% Dismember Chance" long_desc_key="Increase your block damage, entity damage, weapon handling and reload speed with explosives by 50%. Explosives have an additional 20% chance to dismember."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkTurretMastery" max_level="10" parent="attPrestige" name_key="Turret Mastery" desc_key="Tinkered Scrap of finest quality." icon="cp_turretmastery">
+		<effect_group name="Holding a turret">
+				<requirement name="ItemHasTags" tags="turretRanged"/>
+					<passive_effect name="MagazineSize" operation="base_add" level="1,5" value="24,120"/>
+					<passive_effect name="MagazineSize" operation="base_add" level="6,10" value="136,200"/>
+			</effect_group>
+
+		<effect_group name="General and deployed turrets">
+
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,5" value=".12,.6" tags="turretRanged, turretMelee"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="6,10" value=".6,1" tags="turretRanged, turretMelee"/>
+				<passive_effect name="JunkTurretActiveCount" operation="base_add" level="10" value="1"/>
+
+				<passive_effect name="JunkTurretActiveRange" operation="base_add" level="1,5" value="6,6"/>
+				<passive_effect name="JunkTurretActiveRange" operation="base_add" level="6,10" value="12,12"/>
+
+				<effect_description level="1" desc_base="+ 24 magazine size, 12% fire rate" long_desc_key="Increase the magazine size of junk turrets by 24, fire rate by 12%."/>
+				<effect_description level="2" desc_base="+ 48 magazine size, 24% fire rate" long_desc_key="Increase the magazine size of junk turrets by 48, fire rate by 24%."/>
+				<effect_description level="3" desc_base="+ 72 magazine size, 36% fire rate" long_desc_key="Increase the magazine size of junk turrets by 72, fire rate by 36%."/>
+				<effect_description level="4" desc_base="+ 96 magazine size, 48% fire rate" long_desc_key="Increase the magazine size of junk turrets by 96, fire rate by 48%."/>
+				<effect_description level="5" desc_base="+ 120 magazine size, 60% fire rate and 6 blocks active range" long_desc_key="Increase the magazine size of junk turrets by 120, fire rate by 60% and the maximum range at which they are active by 6."/>
+				<effect_description level="6" desc_base="+ 136 magazine size, 68% fire rate" long_desc_key="Increase the magazine size of junk turrets by 136, fire rate by 68%."/>
+				<effect_description level="7" desc_base="+ 152 magazine size, 76% fire rate" long_desc_key="Increase the magazine size of junk turrets by 152, fire rate by 76%."/>
+				<effect_description level="8" desc_base="+ 168 magazine size, 84% fire rate" long_desc_key="Increase the magazine size of junk turrets by 168, fire rate by 84%."/>
+				<effect_description level="9" desc_base="+ 184 magazine size, 92% fire rate" long_desc_key="Increase the magazine size of junk turrets by 184, fire rate by 92%."/>
+				<effect_description level="10" desc_base="+ 200 magazine size, 100% fire rate, 12 blocks active range and 1 additional active turret" long_desc_key="Increase the magazine size of junk turrets by 200, fire rate by 100% and the maximum range at which they are active by 12. Have one additional turret active at the samme time."/>
+			</effect_group>
+			</perk>
+
+		<perk name="perkBowMastery" max_level="10" parent="attPrestige" name_key="Bow Mastery" desc_key="You've mastered the arts of the bow." icon="cp_bowmastery">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="bowDrawPenalty"/>
+					<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+					<passive_effect name="RoundsPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+			</effect_group>
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkArchery"/>
+
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="MagazineSize" operation="base_add" level="5,9" value="1,1"/>
+				<passive_effect name="MagazineSize" operation="base_add" level="10" value="2"/>
+
+				<effect_description level="1" desc_base="+ 6% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with bows by 6%"/>
+				<effect_description level="2" desc_base="+ 12% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with bows by 12%"/>
+				<effect_description level="3" desc_base="+ 18% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with bows by 18%"/>
+				<effect_description level="4" desc_base="+ 24% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with bows by 24%"/>
+				<effect_description level="5" desc_base="+ 30% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, +1 Arrow/Bolt per reload." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with bows by 25% and hold ready an additional bolt or arrow per reload cycle."/>
+				<effect_description level="6" desc_base="+ 34% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with bows by 34%"/>
+				<effect_description level="7" desc_base="+ 38% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with bows by 38%"/>
+				<effect_description level="8" desc_base="+ 42% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with bows by 42%"/>
+				<effect_description level="9" desc_base="+ 46% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with bows by 46%"/>
+				<effect_description level="10" desc_base="+ 50% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, +2 Arrows/Bolts per reload." long_desc_key="Increase your block damage, entity damage, weapon handling and reload speed with bows by 50% and hold ready two additional bolts or arrows per reload cycle."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkRifleMastery" max_level="10" parent="attPrestige" name_key="Rifle Mastery" desc_key="You've mastered the arts of the rifle." icon="cp_riflemastery">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkDeadEye"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="TargetArmor" operation="perc_add" level="5,9" value="-.2,-.2"/>
+				<passive_effect name="TargetArmor" operation="perc_add" level="10" value="-.4"/>
+
+		
+				<effect_description level="1" desc_base="+ 6% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with rifles by 6%"/>
+				<effect_description level="2" desc_base="+ 12% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with rifles by 12%"/>
+				<effect_description level="3" desc_base="+ 18% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with rifles by 18%"/>
+				<effect_description level="4" desc_base="+ 24% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with rifles by 24%"/>
+				<effect_description level="5" desc_base="+ 30% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, ignore 20% Armor" long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with rifles by 30% and ignore an additional 20% of the targets armor."/>
+				<effect_description level="6" desc_base="+ 34% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with rifles by 34%"/>
+				<effect_description level="7" desc_base="+ 38% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with rifles by 38%"/>
+				<effect_description level="8" desc_base="+ 42% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with rifles by 42%"/>
+				<effect_description level="9" desc_base="+ 46% Fire Rate, Entity Damage, Weapon Handling, Reload Speed." long_desc_key="Increase your fire rate, entity damage, weapon handling and reload speed with rifles by 46%"/>
+				<effect_description level="10" desc_base="+ 50% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, ignore 40% armor" long_desc_key="Increase your block damage, entity damage, weapon handling and reload speed with rifles by 50% and ignore an additional 40% of the targets armor."/>
+
+			</effect_group>
+		</perk>
+
+		<perk name="perkMGMastery" max_level="10" parent="attPrestige" name_key="MG Mastery" desc_key="You've mastered the arts of automatic rifles." icon="cp_mgmastery">
+		
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkMachineGunner"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="MagazineSize" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="MagazineSize" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="5,9" value="-.125,-.125"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" level="10" value="-.25"/>
+
+				<effect_description level="1" desc_base="+ 6% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with machine guns by 6%"/>
+				<effect_description level="2" desc_base="+ 12% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with machine guns by 12%"/>
+				<effect_description level="3" desc_base="+ 18% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with machine guns by 18%"/>
+				<effect_description level="4" desc_base="+ 24% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with machine guns by 24%"/>
+				<effect_description level="5" desc_base="+ 30% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size, 12,5% reduced Degradation." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with machine guns by 30%. Also reduce their degradation by 12,5%."/>
+				<effect_description level="6" desc_base="+ 34% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with machine guns by 34%"/>
+				<effect_description level="7" desc_base="+ 38% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with machine guns by 38%"/>
+				<effect_description level="8" desc_base="+ 42% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with machine guns by 42%"/>
+				<effect_description level="9" desc_base="+ 46% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with machine guns by 46%"/>
+				<effect_description level="10" desc_base="+ 50% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size, 25% reduced Degradation." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with machine guns by 50%. Also reduce their degradation by 25%."/>
+
+			</effect_group>
+		</perk>
+
+		<perk name="perkSidearmMastery" max_level="10" parent="attPrestige" name_key="Sidearm Mastery" desc_key="You've mastered the arts of sidearms." icon="cp_sidearmmastery">
+		
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkGunslinger"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".06,.30"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="MagazineSize" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="MagazineSize" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" level="5,9" value="-.125,-.125"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" level="10" value="-.25"/>
+
+				<effect_description level="1" desc_base="+ 6% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with sidearms by 6%"/>
+				<effect_description level="2" desc_base="+ 12% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with sidearms by 12%"/>
+				<effect_description level="3" desc_base="+ 18% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with sidearms by 18%"/>
+				<effect_description level="4" desc_base="+ 24% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with sidearms by 24%"/>
+				<effect_description level="5" desc_base="+ 30% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size, reduce spread by an additional 12,5%." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size, reload speed with sidearms by 30% and reduce their spread by an additional 12,5%."/>
+				<effect_description level="6" desc_base="+ 34% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with sidearms by 34%"/>
+				<effect_description level="7" desc_base="+ 38% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with sidearms by 38%"/>
+				<effect_description level="8" desc_base="+ 42% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with sidearms by 42%"/>
+				<effect_description level="9" desc_base="+ 46% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with sidearms by 46%"/>
+				<effect_description level="10" desc_base="+ 50% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size, reduce spread by an additional 25%" long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size, reload speed with sidearms by 50% and reduce their spread by an additional 25%."/>
+
+			</effect_group>
+		</perk>
+
+		<perk name="perkShotgunMastery" max_level="10" parent="attPrestige" name_key="Shotgun Mastery" desc_key="You've mastered the arts of the shotgun." icon="cp_shotgunmastery">
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkBoomstick"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="MagazineSize" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="MagazineSize" operation="perc_add" level="6,10" value=".34,.5"/>
+
+				<passive_effect name="DamageFalloffRange" operation="base_add" level="5,9" value="2,2"/>
+				<passive_effect name="DamageFalloffRange" operation="base_add" level="10" value="4"/>
+		
+				<effect_description level="1" desc_base="+ 6% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with shotguns by 6%"/>
+				<effect_description level="2" desc_base="+ 12% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with shotguns by 12%"/>
+				<effect_description level="3" desc_base="+ 18% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with shotguns by 18%"/>
+				<effect_description level="4" desc_base="+ 24% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with shotguns by 24%"/>
+				<effect_description level="5" desc_base="+ 30% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size, +2m Effective Range." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with shotguns by 30%. Increase the maximum range at which shotguns deal full damage by 2m."/>
+				<effect_description level="6" desc_base="+ 34% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with shotguns by 34%"/>
+				<effect_description level="7" desc_base="+ 38% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with shotguns by 38%"/>
+				<effect_description level="8" desc_base="+ 42% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with shotguns by 42%"/>
+				<effect_description level="9" desc_base="+ 46% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with shotguns by 46%"/>
+				<effect_description level="10" desc_base="+ 50% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size, +4m Effective Range." long_desc_key="Increase your fire rate, entity damage, weapon handling, clip size  and reload speed with shotguns by 50%. Increase the maximum range at which shotguns deal full damage by 4m."/>
+
+			</effect_group>
+		</perk>
+
+		<perk name="perkLooter" max_level="10" parent="attPrestige" name_key="Hidden Treasures" desc_key="You're even more observant now. You know where to look for the good stuff. Find even more and better loot now." icon="cp_looter">
+			<effect_group>
+				<passive_effect name="LootGamestage" operation="perc_add" level="1,5" value=".06,.3"/>
+				<passive_effect name="LootGamestage" operation="perc_add" level="6,10" value=".34,.5"/>
+			
+				<passive_effect name="ScavengingTime" operation="perc_subtract" level="1,5" value=".03,.15"/>
+				<passive_effect name="ScavengingTime" operation="perc_subtract" level="6,10" value=".16,.2"/>
+
+				<passive_effect name="LootQuantity" operation="perc_add" level="5,9" value=".1,.1" tags="buriedTreasure"/>
+				<passive_effect name="LootQuantity" operation="perc_add" level="10" value=".2" tags="buriedTreasure"/>
+
+				<effect_description level="1" desc_base="+ 6% Loot Bonus and 3% looting speed" long_desc_key="Add an additional 6% to the Loot Bonus and an additional 3% to your looting speed."/>
+				<effect_description level="2" desc_base="+ 12% Loot Bonus and 6% looting speed" long_desc_key="Add an additional 12% to the Loot Bonus and an additional 6% to your looting speed."/>
+				<effect_description level="3" desc_base="+ 18% Loot Bonus and 9% looting speed" long_desc_key="Add an additional 18% to the Loot Bonus and an additional 9% to your looting speed."/>
+				<effect_description level="4" desc_base="+ 24% Loot Bonus and 12% looting speed" long_desc_key="Add an additional 24% to the Loot Bonus and an additional 12% to your looting speed."/>
+				<effect_description level="5" desc_base="+ 30% Loot Bonus, 15% looting speed and 10% more loot from treasures." long_desc_key="Add an additional 30% to the Loot Bonus, an additional 15% to your looting speed and find 10% more loot in treasures."/>
+				<effect_description level="6" desc_base="+ 34% Loot Bonus and 16% looting speed" long_desc_key="Add an additional 34% to the Loot Bonus and an additional 16% to your looting speed."/>
+				<effect_description level="7" desc_base="+ 38% Loot Bonus and 17% looting speed" long_desc_key="Add an additional 38% to the Loot Bonus and an additional 17% to your looting speed."/>
+				<effect_description level="8" desc_base="+ 42% Loot Bonus and 18% looting speed" long_desc_key="Add an additional 42% to the Loot Bonus and an additional 18% to your looting speed."/>
+				<effect_description level="9" desc_base="+ 46% Loot Bonus and 19% looting speed" long_desc_key="Add an additional 46% to the Loot Bonus and an additional 19% to your looting speed."/>
+				<effect_description level="10" desc_base="+ 50% Loot Bonus, 20% looting speed and 20% more loot from treasures." long_desc_key="Add an additional 50% to the Loot Bonus, an additional 20% to your looting speed and find 20% more loot in treasures."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkDismember" max_level="10" parent="attPrestige" name_key="Dismemberment" desc_key="Aim for the weak spots and even more lethal hits. Get additional chance to dismember." icon="cp_dismemberment">
+			<effect_group>
+				<passive_effect name="DismemberChance" operation="base_add" level="1,5" value=".03,.15"/>
+				<passive_effect name="DismemberChance" operation="base_add" level="6,10" value=".16,.2"/>
+
+				<effect_description level="1" desc_base="+ 3% Dismember Chance" long_desc_key="Increase your chance of dismemberment by 3%"/>
+				<effect_description level="2" desc_base="+ 6% Dismember Chance" long_desc_key="Increase your chance of dismemberment by 6%"/>
+				<effect_description level="3" desc_base="+ 9% Dismember Chance" long_desc_key="Increase your chance of dismemberment by 9%"/>
+				<effect_description level="4" desc_base="+ 12% Dismember Chance" long_desc_key="Increase your chance of dismemberment by 12%"/>
+				<effect_description level="5" desc_base="+ 15% Dismember Chance" long_desc_key="Increase your chance of dismemberment by 15%"/>
+				<effect_description level="6" desc_base="+ 16% Dismember Chance" long_desc_key="Increase your chance of dismemberment by 16%"/>
+				<effect_description level="7" desc_base="+ 17% Dismember Chance" long_desc_key="Increase your chance of dismemberment by 17%"/>
+				<effect_description level="8" desc_base="+ 18% Dismember Chance" long_desc_key="Increase your chance of dismemberment by 18%"/>
+				<effect_description level="9" desc_base="+ 19% Dismember Chance" long_desc_key="Increase your chance of dismemberment by 19%"/>
+				<effect_description level="10" desc_base="+ 20% Dismember Chance" long_desc_key="Increase your chance of dismemberment by 20%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkSneakDMG" max_level="10" parent="attPrestige" name_key="Sneak Damage" desc_key="Increase your Sneak Damage against unaware enemies." long_desc_key="perkSneakDMGLongDesc" icon="cp_sneakdmg">
+			<effect_group>
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+					<passive_effect name="DamageBonus" operation="base_add" level="1,5" value=".4,2"/> <!--For UI-->
+					<passive_effect name="DamageBonus" operation="base_add" level="6,10" value="2.2,3"/>
+
+					<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".4,2"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="6,10" value="2.2,3"/>
+
+				<effect_description level="1" desc_base="+ 40% Sneak Damage" long_desc_key="Increase Sneak Damage by 40%"/>
+				<effect_description level="2" desc_base="+ 80% Sneak Damage" long_desc_key="Increase Sneak Damage by 80%"/>
+				<effect_description level="3" desc_base="+ 120% Sneak Damage" long_desc_key="Increase Sneak Damage by 120%"/>
+				<effect_description level="4" desc_base="+ 160% Sneak Damage" long_desc_key="Increase Sneak Damage by 160%"/>
+				<effect_description level="5" desc_base="+ 200% Sneak Damage" long_desc_key="Increase Sneak Damage by 200%"/>
+				<effect_description level="6" desc_base="+ 220% Sneak Damage" long_desc_key="Increase Sneak Damage by 220%"/>
+				<effect_description level="7" desc_base="+ 240% Sneak Damage" long_desc_key="Increase Sneak Damage by 240%"/>
+				<effect_description level="8" desc_base="+ 260% Sneak Damage" long_desc_key="Increase Sneak Damage by 260%"/>
+				<effect_description level="9" desc_base="+ 280% Sneak Damage" long_desc_key="Increase Sneak Damage by 280%"/>
+				<effect_description level="10" desc_base="+ 300% Sneak Damage" long_desc_key="Increase Sneak Damage by 300%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkStealth" max_level="10" parent="attPrestige" name_key="Stealth" desc_key="You're a sneaky mongrel thus enemies have an even harder time to detect you." icon="cp_stealth">
+			<effect_group>		
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+
+				<passive_effect name="LightMultiplier" operation="perc_add" level="1,5" value="-.04,-.2">
+					<requirement name="CVarCompare" cvar="_lightlevel" operation="LTE" value="50"/>
+			</passive_effect>
+				<passive_effect name="LightMultiplier" operation="perc_add" level="6,10" value="-.22,-.3">
+					<requirement name="CVarCompare" cvar="_lightlevel" operation="LTE" value="50"/>
+			</passive_effect>
+			
+				<passive_effect name="NoiseMultiplier" operation="perc_add" level="1,5" value="-.04,-.2"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" level="6,10" value="-.22,-.3"/>
+
+				<effect_description level="1" desc_base="- 4% visibility and noise" long_desc_key="Decrease your visibility in light and the noise you make while crouching by 4%"/>
+				<effect_description level="2" desc_base="- 8% visibility and noise" long_desc_key="Decrease your visibility in light and the noise you make while crouching by 8%"/>
+				<effect_description level="3" desc_base="- 12% visibility and noise" long_desc_key="Decrease your visibility in light and the noise you make while crouching by 12%"/>
+				<effect_description level="4" desc_base="- 16% visibility and noise" long_desc_key="Decrease your visibility in light and the noise you make while crouching by 16%"/>
+				<effect_description level="5" desc_base="- 20% visibility and noise" long_desc_key="Decrease your visibility in light and the noise you make while crouching by 20%"/>
+				<effect_description level="6" desc_base="- 22% visibility and noise" long_desc_key="Decrease your visibility in light and the noise you make while crouching by 22%"/>
+				<effect_description level="7" desc_base="- 24% visibility and noise" long_desc_key="Decrease your visibility in light and the noise you make while crouching by 24%"/>
+				<effect_description level="8" desc_base="- 26% visibility and noise" long_desc_key="Decrease your visibility in light and the noise you make while crouching by 26%"/>
+				<effect_description level="9" desc_base="- 28% visibility and noise" long_desc_key="Decrease your visibility in light and the noise you make while crouching by 28%"/>
+				<effect_description level="10" desc_base="- 30% visibility and noise" long_desc_key="Decrease your visibility in light and the noise you make while crouching by 30%"/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkSenseMinerals" max_level="10" parent="attPrestige" name_key="Sense Minerals" desc_key="You've acquired the knowledge how to sometimes find minerals when mining regular stones. Each rank increases the multiplier for the additional loot you can find." icon="cp_senseminerals">
+
+			<effect_group>
+	
+			<passive_effect name="HarvestCount" operation="base_set" level="1,5" value="1.2,6" tags="senseMineral"/>
+			<passive_effect name="HarvestCount" operation="base_set" level="6,10" value="6.8,10" tags="senseMineral"/>
+		
+				<effect_description level="1" desc_base="Gather additional Iron, Coal, Lead, Brass or Oil Shale when mining stone blocks." long_desc_key="Gives you a very small chance to find  Iron, Coal, Lead, Brass or Oil Shale, when mining stone. They also may contain valuable nuggets at a very low rate."/>
+				<effect_description level="2" desc_base="Gather additional Iron, Coal, Lead, Brass or Oil Shale when mining stone blocks." long_desc_key="Gives you a very small chance to find Iron, Coal, Lead, Brass or Oil Shale, when mining stone. They also may contain valuable nuggets at a very low rate."/>
+				<effect_description level="3" desc_base="Gather additional Iron, Coal, Lead, Brass or Oil Shale when mining stone blocks." long_desc_key="Gives you a small chance to find Iron, Coal, Lead, Brass or Oil Shale, when mining stone. They also may contain valuable nuggets at a very low rate."/>
+				<effect_description level="4" desc_base="Gather additional Iron, Coal, Lead, Brass or Oil Shale when mining stone blocks." long_desc_key="Gives you a small chance to find Iron, Coal, Lead, Brass or Oil Shale, when mining stone. They also may contain valuable nuggets at a very low rate."/>
+				<effect_description level="5" desc_base="Gather additional Iron, Coal, Lead, Brass or Oil Shale when mining stone blocks." long_desc_key="Gives you a mediocre chance to find Iron, Coal, Lead, Brass or Oil Shale, when mining stone. They also may contain valuable nuggets at a very low rate."/>
+				<effect_description level="6" desc_base="Gather additional Iron, Coal, Lead, Brass or Oil Shale when mining stone blocks." long_desc_key="Gives you a mediocre chance to find Iron, Coal, Lead, Brass or Oil Shale, when mining stone. They also may contain valuable nuggets at a very low rate."/>
+				<effect_description level="7" desc_base="Gather additional Iron, Coal, Lead, Brass or Oil Shale when mining stone blocks." long_desc_key="Gives you a high chance to find Iron, Coal, Lead, Brass or Oil Shale, when mining stone. They also may contain valuable nuggets at a very low rate."/>
+				<effect_description level="8" desc_base="Gather additional Iron, Coal, Lead, Brass or Oil Shale when mining stone blocks." long_desc_key="Gives you a high chance to find Iron, Coal, Lead, Brass or Oil Shale, when mining stone. They also may contain valuable nuggets at a very low rate."/>
+				<effect_description level="9" desc_base="Gather additional Iron, Coal, Lead, Brass or Oil Shale when mining stone blocks." long_desc_key="Gives you a very high chance to find Iron, Coal, Lead, Brass or Oil Shale, when mining stone. They also may contain valuable nuggets at a very low rate."/>
+				<effect_description level="10" desc_base="Gather additional Iron, Coal, Lead, Brass or Oil Shale when mining stone blocks." long_desc_key="Gives you a very high chance to find Iron, Coal, Lead, Brass or Oil Shale, when mining stone. They also may contain valuable nuggets at a very low rate."/>
+			</effect_group>
+		</perk>
+
+		<perk name="perkSenseValuables" max_level="10" parent="attPrestige" name_key="Sense Valuables" desc_key="You've acquired the knowledge how to sometimes find valuable resources when digging in the dirt. Each rank increases the multiplier for the additional loot you can find." icon="cp_sensevaluables">
+			<effect_group>
+		
+			<passive_effect name="HarvestCount" operation="base_set" level="1,5" value="1.2,6" tags="senseValuables"/>
+			<passive_effect name="HarvestCount" operation="base_set" level="6,10" value="6.8,10" tags="senseValuables"/>
+
+				<effect_description level="1" desc_base="Gather different additional resources when digging dirt, sand or snow blocks." long_desc_key="Gives you a very small chance to find additional resources, depending on the terrain, when you're digging dirt, sand or snow blocks."/>
+				<effect_description level="2" desc_base="Gather different additional resources when digging dirt, sand or snow blocks." long_desc_key="Gives you a very small chance to find additional resources, depending on the terrain, when you're digging dirt, sand or snow blocks."/>
+				<effect_description level="3" desc_base="Gather different additional resources when digging dirt, sand or snow blocks." long_desc_key="Gives you a small chance to find additional resources, depending on the terrain, when you're digging dirt, sand or snow blocks."/>
+				<effect_description level="4" desc_base="Gather different additional resources when digging dirt, sand or snow blocks." long_desc_key="Gives you a small chance to find additional resources, depending on the terrain, when you're digging dirt, sand or snow blocks."/>
+				<effect_description level="5" desc_base="Gather different additional resources when digging dirt, sand or snow blocks." long_desc_key="Gives you a mediocre chance to find additional resources, depending on the terrain, when you're digging dirt, sand or snow blocks."/>
+				<effect_description level="6" desc_base="Gather different additional resources when digging dirt, sand or snow blocks." long_desc_key="Gives you a mediocre chance to find additional resources, depending on the terrain, when you're digging dirt, sand or snow blocks."/>
+				<effect_description level="7" desc_base="Gather different additional resources when digging dirt, sand or snow blocks." long_desc_key="Gives you a high chance to find additional resources, depending on the terrain, when you're digging dirt, sand or snow blocks."/>
+				<effect_description level="8" desc_base="Gather different additional resources when digging dirt, sand or snow blocks." long_desc_key="Gives you a high chance to find additional resources, depending on the terrain, when you're digging dirt, sand or snow blocks."/>
+				<effect_description level="9" desc_base="Gather different additional resources when digging dirt, sand or snow blocks." long_desc_key="Gives you a very high chance to find additional resources, depending on the terrain, when you're digging dirt, sand or snow blocks."/>
+				<effect_description level="10" desc_base="Gather different additional resources when digging dirt, sand or snow blocks." long_desc_key="Gives you a very high chance to find additional resources, depending on the terrain, when you're digging dirt, sand or snow blocks."/>
+		
+			</effect_group>
+		</perk>
+
+		<perk name="perkCorpseExploiting" max_level="10" parent="attPrestige" name_key="Corpse Exploiting" desc_key="You've acquired the knowledge how to appropriate butcher zombie corpses. Higher ranks increase the output." icon="cp_corpseexploiting">
+			<effect_group>
+			<passive_effect name="HarvestCount" operation="base_set" level="1,5" value="1.2,6" tags="zombieHarvest"/>
+			<passive_effect name="HarvestCount" operation="base_set" level="6,10" value="6.8,10" tags="zombieHarvest"/>
+		
+				<effect_description level="1" desc_base="Gives you a chance to gather Bones, Flesh, Nitrate or Fat" long_desc_key="Gives you a very small chance to find Bones, Flesh, Nitrate or Fat, when you butcher zombie corpses"/>
+				<effect_description level="2" desc_base="Increase your chance to gather Bones, Flesh, Nitrate or Fat" long_desc_key="Gives you a very small chance to find Bones, Flesh, Nitrate or Fat, when you butcher zombie corpses"/>
+				<effect_description level="3" desc_base="Increase your chance to gather Bones, Flesh, Nitrate or Fat" long_desc_key="Gives you a small chance to find Bones, Flesh, Nitrate or Fat, when you butcher zombie corpses"/>
+				<effect_description level="4" desc_base="Increase your chance to gather Bones, Flesh, Nitrate or Fat" long_desc_key="Gives you a small chance to find Bones, Flesh, Nitrate or Fat, when you butcher zombie corpses"/>
+				<effect_description level="5" desc_base="Increase your chance to gather Bones, Flesh, Nitrate or Fat" long_desc_key="Gives you a mediocre chance to find Bones, Flesh, Nitrate or Fat, when you butcher zombie corpses"/>
+				<effect_description level="6" desc_base="Increase your chance to gather Bones, Flesh, Nitrate or Fat" long_desc_key="Gives you a mediocre chance to find Bones, Flesh, Nitrate or Fat, when you butcher zombie corpses"/>
+				<effect_description level="7" desc_base="Increase your chance to gather Bones, Flesh, Nitrate or Fat" long_desc_key="Gives you a high chance to find Bones, Flesh, Nitrate or Fat, when you butcher zombie corpses"/>
+				<effect_description level="8" desc_base="Increase your chance to gather Bones, Flesh, Nitrate or Fat" long_desc_key="Gives you a high chance to find Bones, Flesh, Nitrate or Fat, when you butcher zombie corpses"/>
+				<effect_description level="9" desc_base="Increase your chance to gather Bones, Flesh, Nitrate or Fat" long_desc_key="Gives you a very high chance to find Bones, Flesh, Nitrate or Fat, when you butcher zombie corpses"/>
+				<effect_description level="10" desc_base="Increase your chance to gather Bones, Flesh, Nitrate or Fat" long_desc_key="Gives you a very high chance to find Bones, Flesh, Nitrate or Fat, when you butcher zombie corpses"/>
+			</effect_group>
+		</perk>
+</insertBefore>
+</configs>

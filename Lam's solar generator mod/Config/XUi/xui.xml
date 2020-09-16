@@ -1,4 +1,0 @@
-<configs>
-	<!-- Forge input slots -->
-	<set xpath="/xui/ruleset[@name='default']/window_group[@name='powersource']/window[@name='windowPowerSourceStats']/@name">LamwindowPowerSourceStats</set>
-</configs>

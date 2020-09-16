@@ -71,10 +71,8 @@
 		<set xpath="/items/item[@name='thrownAmmoFlare']/property[@name='Stacknumber']/@value">50</set> <!-- Default 10 -->
 		<set xpath="/items/item[@name='resourceBuckshot']/property[@name='Stacknumber']/@value">1000</set> <!-- Default 250 -->
 		<set xpath="/items/item[@name='resourceArrowHeadIron']/property[@name='Stacknumber']/@value">1000</set> <!-- Default 500 -->
-		<set xpath="/items/item[@name='resourceArrowHeadSteellAP']/property[@name='Stacknumber']/@value">1000</set> <!-- Default 500 -->
 	
 	<!-- Resources -->
-		<set xpath="/items/item[@name='resourceYuccaFiber']/property[@name='Stacknumber']/@value">10000</set> <!-- Default 6000 -->
 		<set xpath="/items/item[@name='resourceWood']/property[@name='Stacknumber']/@value">10000</set> <!-- Default 6000 -->
 		<set xpath="/items/item[@name='resourceCrushedSand']/property[@name='Stacknumber']/@value">10000</set> <!-- Default 6000 -->
 		<set xpath="/items/item[@name='resourceBrokenGlass']/property[@name='Stacknumber']/@value">10000</set> <!-- Default 6000 -->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="ZMXuiCPBBMxl" />
+		<Description value="An extension modlet for SMXui that converts the backpack to a 99 slot inventory." />
+		<Author value="Sirillion" />
+		<Version value="19.0.Release4" />
+		<Website value="http://www.nexusmods.com/7daystodie/mods/22/?" />
+	</ModInfo>
+	<DMT>
+		<dependencies>
+			<dependancy>SMXlib</dependancy>
+			<dependancy>SMXui</dependancy>
+			<dependancy>ZMXuiCP</dependancy>
+			<dependancy>ZMXuiCPBBM</dependancy>
+		</dependencies>
+		<conflicts />
+	</DMT>
+</xml>

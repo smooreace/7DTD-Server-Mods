@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<xml>
+	<ModInfo>
+		<Name value="ZMXhudCP" />
+		<Description value="A compatibility modlet to ensure the highest level of compatibility for SMXhud." />
+		<Author value="Sirillion" />
+		<Version value="19.0.Release4" />
+		<Website value="http://www.nexusmods.com/7daystodie/mods/22/?" />
+	</ModInfo>
+	<DMT>
+		<dependencies>
+			<dependancy>SMXhud</dependancy>
+			<dependancy>SMXlib</dependancy>
+		</dependencies>
+		<conflicts />
+	</DMT>
+</xml>
