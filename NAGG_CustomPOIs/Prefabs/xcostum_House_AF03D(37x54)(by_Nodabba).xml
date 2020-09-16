@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True"/>
+    <property name="AllowTopSoilDecorations" value="True"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+    <property name="ExcludePOICulling" value="False"/>
+    <property name="DifficultyTier" value="2"/>
+    <property name="Zoning" value="Downtown,ResidentialNew,ResidentialOld,Residential"/>
+    <property name="RotationToFaceNorth" value="1"/>
+    <property name="YOffset" value="-2"/>
+    <property name="DistantPOIYOffset" value="0"/>
+    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
+    <property name="AllowedTownships" value="city,rural,town,wilderness"/>
+    <property name="EditorGroups" value="Wilderness"/>
+    <property name="TraderAreaProtect" value="35, 25, 35"/>
+    <property name="TraderAreaTeleportSize" value="40, 30, 40"/>
+    <property name="TraderAreaTeleportCenter" value="1, 1, 1"/>
+    <property name="SleeperVolumeStart" value="23, 6, 12#30, 7, 27#5, 2, 12#1, 2, 29#24, 3, 24#14, 2, 2#10, 2, 30#22, 10, 19#22, 3, 34#25, 2, 14#26, 7, 26#22, 2, 40#29, 3, 23#25, 1, 32#10, 3, 42#32, 8, 13#17, 12, 12#30, 3, 27#22, 2, 35"/>
+    <property name="SleeperVolumeSize" value="4, 3, 10#4, 2, 4#18, 7, 17#9, 6, 16#4, 2, 4#14, 5, 10#12, 7, 9#6, 4, 14#3, 4, 3#8, 3, 8#2, 1, 5#10, 6, 11#4, 3, 9#9, 6, 7#11, 7, 12#3, 2, 10#14, 4, 5#4, 2, 4#2, 2, 2"/>
+    <property name="SleeperVolumeGroup" value="S_-_Group_Abandoned_House,1,2,S_-_Group_Zom_Badass_Only,1,1,S_-_Group_Abandoned_House,2,5,S_-Group_Generic_Zombie,2,5,S_-_Group_Zom_Badass_Only,1,1,S_-Group_Generic_Zombie,1,2,S_-_Group_Abandoned_House,2,5,S_-_Group_Abandoned_House,1,2,S_-_Group_Zom_Badass,1,1,S_Zom_Utility_Worker,1,2,S_-_Group_Abandoned_House,1,1,S_Zom_Burnt,1,2,S_-_Group_Football_Stadium,1,1,S_-_Group_Biker_Bar,1,2,S_-_Group_Abandoned_House,1,1,S_-_Group_Abandoned_House,1,2,S_Zom_Spider_Only,1,2,S_-_Group_Abandoned_House,1,2,S_-_Group_Zom_Badass_Only,1,1"/>
+    <property name="SleeperVolumeGameStageAdjust" value="50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+    <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False"/>
+    <property name="SleeperIsBossVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False"/>
+    <property name="SleeperVolumeFlags" value="0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,0,2,0,0"/>
+    <property name="SleeperVolumeGroupId" value="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+</prefab>

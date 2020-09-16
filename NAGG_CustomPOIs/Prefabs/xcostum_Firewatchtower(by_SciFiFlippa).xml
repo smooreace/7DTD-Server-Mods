@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="AllowTopSoilDecorations" value="True" />
+  <property name="TraderArea" value="False" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DifficultyTier" value="1" />
+  <property name="Zoning" value="Commercial,Downtown,Industrial,ResidentialNew,ResidentialOld,Residential" />
+  <property name="RotationToFaceNorth" value="1" />
+  <property name="YOffset" value="-4" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,wasteland" />
+  <property name="AllowedTownships" value="city,rural,town,wilderness" />
+  <property name="EditorGroups" value="Wilderness, Ancap Zone, burnt, commercial, government, out buildings, rural, remnant" />
+  <property name="TraderAreaProtect" value="35, 25, 35" />
+  <property name="TraderAreaTeleportSize" value="40, 30, 40" />
+  <property name="TraderAreaTeleportCenter" value="1, 1, 1" />
+  <property name="SleeperVolumeStart" value="3, 1, 2#3, 17, 3" />
+  <property name="SleeperVolumeSize" value="8, 9, 8#8, 6, 7" />
+  <property name="SleeperVolumeGroup" value="S_Zom_Burnt,4,6,S_Zom_Burnt,2,3" />
+  <property name="SleeperVolumeGameStageAdjust" value="0,0" />
+  <property name="SleeperIsLootVolume" value="False,False" />
+  <property name="SleeperIsBossVolume" value="False,False" />
+  <property name="SleeperVolumeFlags" value="0,0" />
+  <property name="SleeperVolumeGroupId" value="0,0" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="SleeperIsQuestExclude" value="False,False" />
+  <property class="IndexedBlockOffsets">
+    <property class="brBlock">
+      <property name="0" value="6, 18, 6" />
+    </property>
+  </property>
+  <property class="Stats">
+    <property name="TotalVertices" value="34727" />
+    <property name="TotalTriangles" value="32449" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="18229" />
+      <property name="Triangles" value="21261" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="7992" />
+      <property name="Triangles" value="5640" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="4736" />
+      <property name="Triangles" value="2324" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="3074" />
+      <property name="Triangles" value="2104" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes6">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes7">
+      <property name="Vertices" value="696" />
+      <property name="Triangles" value="1120" />
+    </property>
+    <property class="ChunkMeshes8">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes9">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+  </property>
+</prefab>
