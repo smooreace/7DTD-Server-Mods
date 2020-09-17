@@ -37,6 +37,14 @@ Navigate to the location where you have 7 Days to Die installed
   4 - Click on the Explorer window thats showing the contents of the Mod folder
 
   5 - Hit CTRL V (PASTE)
+  
+  6 - Open the POI folder and hit CTRL A (select all) and CTRL C (copy)
+  
+  7 - Hit the back arrow button. You should now be in ...\steamapps\common\7 Days To Die
+  
+  8 - Open the DATA folder, then open the PREFABS folder
+  
+  9 - Hit CTRL V (paste) to copy all the data from inside the POI folder to the Prefabs folder
  
  ******************************************************************************************************************
  
