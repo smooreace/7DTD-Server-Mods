@@ -52,12 +52,12 @@ This collection includes all mods running on The Tropolis Collective 7 Days to D
   
  ******************************************************************************************************************
  
-                                        Instructions on managine update
- All updates will have data below edits to assist in applying those updates. Please note that had to have been 
- current with updates at the time for the info below to be accurate. If you werent up to date then please follow the 
- instructions above to re-install everything fresh!!
+                                        Instructions on managing updates
+ All updates will have data below edited to assist in applying those updates. Please note that you had to have been 
+ current with updates at the time for the info below to be accurate. If you weren't up to date, or you arent sure  
+ then please follow the instructions above to re-install everything fresh!!
  
-             Use the instructions above except that instead of selecting ALL of the files, you only
+             Use the instructions above except that instead of selecting ALL of the folders you only
                                       need to select the ones listed below.
 									  
  0-CreaturePackAnimals
