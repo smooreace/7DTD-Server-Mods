@@ -2,19 +2,19 @@
 This collection includes all mods running on The Tropolis Collective 7 Days to Die server
  
  
-All of these are not absolutely required on your client. But its easier to just grab them all than it is to to be selective.
+ All of these are not absolutely required on your client. But its easier to just grab them all than it is to to be selective.
  
  ******************************************************************************************************************
  
-Near the top right corner, click the greed button that says CODE
-Then select - Download ZIP
+ Near the top right corner, click the greed button that says CODE
+ Then select - Download ZIP
  
  
-Once the download is finished, open the downloaded file 
+ Once the download is finished, open the downloaded file 
  
  ******************************************************************************************************************
  
-Navigate to the location where you have 7 Days to Die installed 
+ Navigate to the location where you have 7 Days to Die installed 
   1 - Ensure you are on LIBRARIES section - Just click LIBRARIES at the top
 
   2 - In Steam, ensure you are on LIBRARIES section - Just click LIBRARIES at the top
@@ -49,3 +49,21 @@ Navigate to the location where you have 7 Days to Die installed
  ******************************************************************************************************************
  
  Once its finished copying you're all set. Close both windows, start the game, and you're ready to join!
+  
+ ******************************************************************************************************************
+ 
+                                        Instructions on managine update
+ All updates will have data below edits to assist in applying those updates. Please note that had to have been 
+ current with updates at the time for the info below to be accurate. If you werent up to date then please follow the 
+ instructions above to re-install everything fresh!!
+ 
+             Use the instructions above except that instead of selecting ALL of the files, you only
+                                      need to select the ones listed below.
+									  
+ 0-CreaturePackAnimals
+
+ 0-CreaturePackZombies
+ 
+ 2-CreaturePackEffects
+ 
+ CCTVs
